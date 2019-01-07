@@ -3,4 +3,4 @@
 * +1 714 463 5142
 * README?  No!  Read *YOU*!
 
-In all seriousness, all the reference information is in this repository's wiki.
+In all seriousness, it's quite deprecated.
