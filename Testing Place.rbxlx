@@ -39,26 +39,26 @@
 		<Item class="Camera" referent="RBXAC26DCA67A954AEAA864537E3A963B11">
 			<Properties>
 				<CoordinateFrame name="CFrame">
-					<X>262.262787</X>
-					<Y>432.249512</Y>
-					<Z>420.721313</Z>
-					<R00>0.415804327</R00>
-					<R01>-0.639744997</R01>
-					<R02>0.646400094</R02>
-					<R10>-1.49011612e-08</R10>
-					<R11>0.710756123</R11>
-					<R12>0.703438461</R12>
-					<R20>-0.909454107</R20>
-					<R21>-0.292492747</R21>
-					<R22>0.295535445</R22>
+					<X>2.05412865</X>
+					<Y>2.41260815</Y>
+					<Z>-51.4164352</Z>
+					<R00>0.999202967</R00>
+					<R01>-0.0018695679</R01>
+					<R02>-0.0398751907</R02>
+					<R10>-1.16415322e-10</R10>
+					<R11>0.998902798</R11>
+					<R12>-0.0468340479</R12>
+					<R20>0.0399189927</R20>
+					<R21>0.0467967205</R21>
+					<R22>0.998106539</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<CoordinateFrame name="Focus">
-					<X>238.175568</X>
-					<Y>406.036835</Y>
-					<Z>409.708588</Z>
+					<X>2.55425644</X>
+					<Y>3.00001621</Y>
+					<Z>-63.9350166</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -164,7 +164,8 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-05-28/2018-06? • 2: 2019-01-06 • +1 714 463 5142 //--
 local api
 
---INTERNAL METHODS:
+--Pulls up the utility functions.
+local util=require(script.Util)
 
 --Gets the character from that annoying metaclass.
 function getChar(obj)
@@ -176,36 +177,6 @@ function getChar(obj)
 		--Secret metatable property you'd never O'zbekiston'in guess!
 		local qush=getmetatable(obj).chiqish=='charMetaclass'
 		if qush then return obj.Character end
-	end
-end
-
-local applyPackage=require(script.ApplyPackage)
-local function GetEnumValue(eType,enum)
-	
-	--Checks if 'eType' is a valid Enum type-string.
-	local vEnumStr=type(eType)=='string'and
-		pcall(function()return Enum[eType]end)
-	
-	--Either converts the 'eType' to its Enum object or errors out.
-	if vEnumStr then eType=Enum[eType]
-	elseif typeof(eType)~='Enum' then
-		--error('Internal: \'eType\' is not valid.',2)
-		return
-	end
-	
-	--This is where we assume 'eType' is an Enum.
-	
-	--Checks if the EnumItem was already passed into and returns conditionally.
-	if typeof(enum)=='EnumItem'and enum.EnumType==eType then return enum end
-	
-	--Check if it's a valid EnumItem's name.
-	local vEName=pcall(function()return eType[enum]end)
-	
-	--Either returns the EnumItem associated or errors out.
-	if vEName then return eType[enum]
-	elseif enum then
-		--error('Internal: \'enum\' is not valid.',2)
-		return
 	end
 end
 
@@ -242,55 +213,6 @@ else
 
 	--Just another boring wrapper method.
 	function fireClients(...) evt:FireAllClients(...)end
-end
-
---Generates a TweenInfo from the provided options.
-function getTweenInfo(options)
-	
-	--Returns the default if it's nil.
-	if not options then
-		return TweenInfo.new()
-	end
-	
-	--TweenInfo
-	local ti=options.TweenInfo
-	
-	--Positive Float
-	local t=options.Time
-	
-	--EasingStyle
-	local es=options.EasingStyle
-	
-	--EasingDirection
-	local ed=options.EasingDirection
-	
-	--No need to process if you've already got it.
-	if typeof(ti)=='TweenInfo' then return ti end
-	
-	--Check the time.
-	if not t then t=1
-	elseif not(typeof(t)=='number' and t>0)then e=true
-		error('\'Time\' is not a positive number; time only goes backwards when the music goes backwards too.',2)
-	end
-	
-	--Checks the EasingStyle.
-	if not es then es=Enum.EasingStyle.Linear
-	else es=GetEnumValue('EasingStyle',es)end
-	if not es then e=true
-		error('\'EasingStyle\' is not a valid value.',3)
-		return
-	end
-	
-	--Checks the EasingDirection.
-	if not ed then ed=Enum.EasingDirection.InOut
-	else ed=GetEnumValue('EasingDirection',ed)end
-	if not ed then e=true
-		error('\'EasingDirection\' is not a valid value.',3)
-		return
-	end
-	
-	--Returns the generated TweenInfo.
-	return TweenInfo.new(t,es,ed)
 end
 
 --API METHODS
@@ -376,7 +298,7 @@ api={
 		local rigS=char.Humanoid.RigType.Name
 		for i,o in pairs(app:children()) do
 			if o.Name==rigS then
-				applyPackage(char,rigS,o)
+				util.ApplyPackage(char,rigS,o)
 			elseif o.Name==rigS..'Anim' then
 				local s=char.Animate
 				for i,a in pairs(o:children()) do
@@ -470,7 +392,7 @@ api={
 		--HumanoidStateType or nil
 		local oSt=options.State
 		local hst=Enum.HumanoidStateType
-		local state=GetEnumValue(hst,options.State)
+		local state=util.GetEnumValue(hst,options.State)
 		
 		--Character
 		local char=getChar(options.Character)
@@ -547,16 +469,9 @@ api={
 		local pr=options.Property
 		
 		--TweenInfo
-		local ti=getTweenInfo(options)
-		
-		--boolean
-		local cl=options.FireOnClient
+		local ti=util.GetTweenInfo(options)
 		
 		do local e
-			if typeof(ob)~='Instance'then e=true
-				error('\'Object\' is not an Instance.',2)
-			end
-			
 			if not pr then e=true
 				error('\'Property\' has not been declared.',2)
 			elseif not pcall(function()return ob[pr]end)then e=true
@@ -569,14 +484,18 @@ api={
 				error('\'ToValue\' is incompatible with the property type.',2)
 			end
 			
-			--Requires to be done by the client.
-			if ob:isA'Camera' then
-				--warn'Switching to client; this object can\'t be tweened by the server.'
-				cl=true
-			end
-			
 			--Returns with nothing since it already errored internally.
 			if not ti then return end
+			
+			--Requires to be done by the client, though 'camera' is a nice shortcut.
+			if ob==game.Workspace.CurrentCamera or ob:lower()=='camera' then
+				local tiT=util.ExtractTweenInfo(ti)
+				fireClients('TCam',tiT,pr,tv)
+				return
+				
+			elseif typeof(ob)~='Instance'then e=true
+				error('\'Object\' is not an Instance.',2)
+			end
 			
 			if e then
 			return end
@@ -6402,6 +6321,7 @@ end,stopCustomAnims}]]></ProtectedString>
 					<ProtectedString name="Source"><![CDATA[--Code retrieved from RQ Trivia, a previous project of mine. // 1630228 // 2018-08-15/2018-10-02, 2019-01-07/2019-01-12 // +44 7031 959982
 
 local fT;fT={
+	--[[
 	--Generates a macro from a table of argument groups.
 	tweenFunc=function(tweenT,sync)
 		
@@ -6468,6 +6388,7 @@ local fT;fT={
 			end,
 		}
 	end,
+	]]
 	
 	--Wrapper function for TweenService.
 	doTween=function(part,tI,props)
@@ -6487,7 +6408,12 @@ return fT]]></ProtectedString>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">AnimLocal</string>
 					<string name="ScriptGuid">{92C4FD5C-2DA8-4D73-BE60-F3BB83FC0467}</string>
-					<ProtectedString name="Source"><![CDATA[--It's all the developers' fault this has to be.
+					<ProtectedString name="Source"><![CDATA[--Initialises the mainoest variables.
+local evt=script.Event.Value
+local main=evt.Parent
+local util=require(main.Util)
+
+--It's all the developers' fault this has to be.
 local humanoidSt8s={}
 for i,st in pairs(Enum.HumanoidStateType:GetEnumItems()) do
 	if st.Name~='None' then
@@ -6505,13 +6431,23 @@ function c(name,...)
 		end
 		char.Humanoid:ChangeState(state)
 		
-	elseif name=='Tween' then
+	--Tweens the CurrentCamera locally, since it doesn't replicate from the server.
+	elseif name=='TCam' then
+		local tiT,pr,tv=...
+		local ti=util.GetTweenInfo(tiT)
+		local cc=game.Workspace.CurrentCamera
 		
+		--Ensures the camera tween works well and all.
+		if cc.CameraType~=Enum.CameraType.Scriptable then
+			cc.CameraType='Scriptable'warn'CameraType set to \'Scriptable\''
+		end
+		
+		--Exxxecute the plan.
+		util.DoTween(cc,ti,{[pr]=tv})
 	end
 end
 
---
-local evt=script.Event.Value
+--Connects the events over.
 if evt:isA'BindableEvent' then evt.Event:Connect(c)
 else evt.OnClientEvent:Connect(c) end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
@@ -6533,6 +6469,120 @@ else evt.OnClientEvent:Connect(c) end]]></ProtectedString>
 			<Item class="BindableEvent" referent="RBX46E6D090052A457D99B83CB14E723DDA">
 				<Properties>
 					<string name="Name">BindableEvent</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXAF95A7F8C7B64E10A1DD9E1444542F27">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Util</string>
+					<string name="ScriptGuid">{DDA949B7-25EC-4450-8386-2BAF7BD9BCD9}</string>
+					<ProtectedString name="Source"><![CDATA[local function GetEnumValue(eType,enum)
+	
+	--Checks if 'eType' is a valid Enum type-string.
+	local vEnumStr=type(eType)=='string'and
+		pcall(function()return Enum[eType]end)
+	
+	--Either converts the 'eType' to its Enum object or errors out.
+	if vEnumStr then eType=Enum[eType]
+	elseif typeof(eType)~='Enum' then
+		--error('Internal: \'eType\' is not valid.',2)
+		return
+	end
+	
+	--This is where we assume 'eType' is an Enum.
+	
+	--Checks if the EnumItem was already passed into and returns conditionally.
+	if typeof(enum)=='EnumItem'and enum.EnumType==eType then return enum end
+	
+	--Check if it's a valid EnumItem's name.
+	local vEName=pcall(function()return eType[enum]end)
+	
+	--Either returns the EnumItem associated or errors out.
+	if vEName then return eType[enum]
+	elseif enum then
+		--error('Internal: \'enum\' is not valid.',2)
+		return
+	end
+end
+
+--Generates a TweenInfo from the provided options.
+local function getTweenInfo(options)
+	
+	--Returns the default TweenInfo if it's nil.
+	if not options then return TweenInfo.new()end
+	
+	--TweenInfo
+	local ti=options.TweenInfo
+	
+	--Positive Float
+	local t=options.Time
+	
+	--EasingStyle
+	local es=options.EasingStyle
+	
+	--EasingDirection
+	local ed=options.EasingDirection
+	
+	--Positive Integer or 0
+	local rp=options.RepeatCount
+	
+	--Boolean
+	local rv=options.Reverses
+	
+	--Positive Float
+	local dl=options.DelayTime
+	
+	--No need to process if you've already got it.
+	if typeof(ti)=='TweenInfo' then return ti end
+	
+	--Checks the EasingStyle.
+	if not es then es=Enum.EasingStyle.Linear else es=GetEnumValue('EasingStyle',es)end
+	if not es then error('\'EasingStyle\' is not a valid value.',3)return end
+	
+	--Checks the EasingDirection.
+	if not ed then ed=Enum.EasingDirection.InOut else ed=GetEnumValue('EasingDirection',ed)end
+	if not ed then error('\'EasingDirection\' is not a valid value.',3)return end
+	
+	--Check the time.
+	if not t then t=1 elseif typeof(t)~='number'or t<=0 then
+		error('\'Time\' is not a positive number; time only goes backwards when the music goes backwards too.',3)
+	end
+	
+	--Checks out the other values (RepeatCount, reverses, delay).
+	if not rp then rp=0 elseif type(rp)~='number'or rp%1>0 or rp<0 then error('\'RepeatCount\' is not a valid integer.',3)return end
+	if not rv then rv=false elseif type(rv)~='boolean'then error('\'Reverses\' is not a valid boolean value.',3)return end
+	if not dl then dl=0 elseif type(dl)~='number'or dl<0 then error('\'DelayTime\' is not a valid number.',3)return end
+	
+	--Returns the generated TweenInfo.
+	return TweenInfo.new(t,es,ed,rp,rv,dl)
+end
+
+--Converts the TweenInfo to a table, so that it may be reprocessed in GetTweenInfo.
+local function extractTweenInfo(ti)
+	return{
+		Time=ti.Time,
+		EasingStyle=ti.EasingStyle,
+		EasingDirection=ti.EasingDirection,
+		RepeatCount=ti.RepeatCount,
+		Reverses=ti.Reverses,
+		DelayTime=ti.DelayTime,
+	}
+end
+
+local function doTween(part,tI,props)
+	if not props then props=tI tI=TweenInfo.new() end
+	local t=game.TweenService:Create(part,tI,props)
+	t:Play()return t
+end
+
+return{
+	ApplyPlackage=require(script.Parent.ApplyPackage),
+	GetEnumValue=GetEnumValue,
+	GetTweenInfo=getTweenInfo,
+	ExtractTweenInfo=extractTweenInfo,
+	DoTween=doTween,
+}]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
@@ -6707,13 +6757,14 @@ local ch repeat
 until ch
 
 local c=0 repeat
-	c=c+2*math.pi/3
+	local to=ch.HumanoidRootPart.CFrame
+		*CFrame.Angles(0,c*2*math.pi/3,0)*CFrame.new(0,1,10)
 	game.Workspace.CurrentCamera.CameraType='Fixed'
-	api.Tween{
-		Object=game.Workspace.CurrentCamera,
-		ToValue=ch.HumanoidRootPart.CFrame*CFrame.Angles(0,c,0)*CFrame.new(0,0,5),
-		Property='CFrame'}
-until not wait(3)]]></ProtectedString>
+	
+	if c>0 then api.Tween{Object='cam',ToValue=to,Property='CFrame'}
+	else end
+	c=c+1
+until not wait(1)]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
