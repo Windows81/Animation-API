@@ -39,26 +39,26 @@
 		<Item class="Camera" referent="RBXAC26DCA67A954AEAA864537E3A963B11">
 			<Properties>
 				<CoordinateFrame name="CFrame">
-					<X>2.05412865</X>
-					<Y>2.41260815</Y>
-					<Z>-51.4164352</Z>
-					<R00>0.999202967</R00>
-					<R01>-0.0018695679</R01>
-					<R02>-0.0398751907</R02>
-					<R10>-1.16415322e-10</R10>
-					<R11>0.998902798</R11>
-					<R12>-0.0468340479</R12>
-					<R20>0.0399189927</R20>
-					<R21>0.0467967205</R21>
-					<R22>0.998106539</R22>
+					<X>-10.7446365</X>
+					<Y>8.34538078</Y>
+					<Z>15.9971218</Z>
+					<R00>0.830132008</R00>
+					<R01>0.221576497</R01>
+					<R02>-0.511649072</R02>
+					<R10>-1.49011612e-08</R10>
+					<R11>0.91764605</R11>
+					<R12>0.397398889</R12>
+					<R20>0.557566941</R20>
+					<R21>-0.329893529</R21>
+					<R22>0.761767328</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<CoordinateFrame name="Focus">
-					<X>2.55425644</X>
-					<Y>3.00001621</Y>
-					<Z>-63.9350166</Z>
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -6515,7 +6515,7 @@ local function getTweenInfo(options)
 	--TweenInfo
 	local ti=options.TweenInfo
 	
-	--Positive Float
+	--Positive Float or 0
 	local t=options.Time
 	
 	--EasingStyle
@@ -6545,7 +6545,7 @@ local function getTweenInfo(options)
 	if not ed then error('\'EasingDirection\' is not a valid value.',3)return end
 	
 	--Check the time.
-	if not t then t=1 elseif typeof(t)~='number'or t<=0 then
+	if not t then t=1 elseif typeof(t)~='number'or t<0 then
 		error('\'Time\' is not a positive number; time only goes backwards when the music goes backwards too.',3)
 	end
 	
@@ -6749,6 +6749,7 @@ end]]></ProtectedString>
 					<string name="ScriptGuid">{550606AE-5302-4093-A18C-435E63230295}</string>
 					<ProtectedString name="Source"><![CDATA[while not _G.AnimationAPI do wait() end
 local api=_G.AnimationAPI
+local cc=game.workspace.CurrentCamera
 
 local ch repeat
 	ch=game.Players:children()[1]
@@ -6756,18 +6757,101 @@ local ch repeat
 	wait()
 until ch
 
-local c=0 repeat
-	local to=ch.HumanoidRootPart.CFrame
-		*CFrame.Angles(0,c*2*math.pi/3,0)*CFrame.new(0,1,10)
+local c=0 while true do
+	local r=math.sin(math.pi*c/13)*math.pi/3
+	local cf=ch.HumanoidRootPart.CFrame
+		*CFrame.Angles(0,r,0)*CFrame.new(0,1,10)
+	local fo=ch.HumanoidRootPart.CFrame
 	game.Workspace.CurrentCamera.CameraType='Fixed'
 	
-	if c>0 then api.Tween{Object='cam',ToValue=to,Property='CFrame'}
-	else end
+	local t=c>0 and .25 or 0
+	api.Tween{Object=cc,ToValue=cf,Property='CFrame',Time=t}
+	api.Tween{Object=cc,ToValue=fo,Property='Focus',Time=t}
+	wait(t)
 	c=c+1
-until not wait(1)]]></ProtectedString>
+end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
+		</Item>
+		<Item class="SpawnLocation" referent="RBX572F3A8A8A594EA7BA102CD7CD2F9305">
+			<Properties>
+				<bool name="AllowTeamChangeOnTouch">false</bool>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<int name="Duration">10</int>
+				<bool name="Enabled">true</bool>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">SpawnLocation</string>
+				<bool name="Neutral">true</bool>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<int name="TeamColor">194</int>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.0500000007</X>
+					<Y>0.0500000007</Y>
+					<Z>0.0500000007</Z>
+				</Vector3>
+			</Properties>
 		</Item>
 	</Item>
 	<Item class="SoundService" referent="RBX31BE0A63C35C44E292604C4D05AB9AB4">
