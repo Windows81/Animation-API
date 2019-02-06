@@ -39,18 +39,18 @@
 		<Item class="Camera" referent="RBXAC26DCA67A954AEAA864537E3A963B11">
 			<Properties>
 				<CoordinateFrame name="CFrame">
-					<X>-10.7446365</X>
+					<X>-10.2937841</X>
 					<Y>8.34538078</Y>
-					<Z>15.9971218</Z>
-					<R00>0.830132008</R00>
-					<R01>0.221576497</R01>
-					<R02>-0.511649072</R02>
-					<R10>-1.49011612e-08</R10>
+					<Z>16.2908993</Z>
+					<R00>0.845376551</R00>
+					<R01>0.212278798</R01>
+					<R02>-0.490179747</R02>
+					<R10>1.49011612e-08</R10>
 					<R11>0.91764605</R11>
-					<R12>0.397398889</R12>
-					<R20>0.557566941</R20>
-					<R21>-0.329893529</R21>
-					<R22>0.761767328</R22>
+					<R12>0.39739871</R12>
+					<R20>0.534170866</R20>
+					<R21>-0.335951537</R21>
+					<R22>0.775756419</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
@@ -504,81 +504,6 @@ api={
 		--Returns the TweenObject for advanced editing.
 		return require(script.Tween).doTween(ob,ti,{[pr]=tv})
 	end,
-	InterpolateCamera=function(options)
-		
-		--Table with Number? and CFrame 
-		local cf=options.CFrame
-		
-		--Table with Number? and CFrame 
-		local tweens=options.Tweens
-		
-		--Number?
-		local dTime=options.Time or 1
-		
-		do local e
-			if typeof(dTime)~='number'and dTime<0 then e=true
-				error('\'Time\' should be a duration in seconds.',2)
-			end
-			
-			if cf then
-				if typeof(cf)~='CFrame' then e=true
-					error('\'CFrame\' should be a CFrame.',2)
-				elseif tweens then
-					error('Both \'Tween\' and \'Tweens\' were passed in; please get rid of either one.',2)
-				else tweens={{cf,dTime}}end
-			end
-				
-			if typeof(tweens)~='table' then e=true
-				error('\'Tweens\' should be a table of either grouping tables or of CFrames.',2)
-			else
-			
-				--Checking for each entry of the 'tweens'.
-				for i,t in pairs(tweens) do
-					if typeof(t)=='table' then
-						local cf,dur
-						for i,p in pairs(t) do
-							
-							if typeof(p)=='CFrame' then
-								if not cf then
-									cf=p
-								else e=true
-									error('\'Tweens\' can only contain one CFrame per grouping.',2)
-								end
-								
-							elseif typeof(p)=='number' then
-								if not dur then
-									dur=p
-								else
-									error('\'Tweens\' can only contain one duration per grouping.',2)
-								end
-								
-							else e=true
-								error('\'Tweens\' must contain a CFrame and an optional delay time.',2)
-							break end
-						end
-						tweens[i]={cf,dur or dTime}
-						
-					elseif typeof(t)=='CFrame' then
-						tweens[i]={t,dTime}
-					else e=true
-						error('\'Tweens\' should only contain either CFrames or grouping tables.',2)
-						break
-					end
-				end
-			end
-			
-			if e then
-			return end
-		end
-		
-		spawn(function()
-			for i,t in pairs(tweens) do
-				local cf,dur=unpack(t)
-				game.Workspace.CurrentCamera:Interpolate(cf,dur)
-				wait(dur)
-			end
-		end)
-	end
 }
 
 --[[
