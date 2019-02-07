@@ -174,7 +174,9 @@ function getChar(obj)
 	if api.IsCharacter(obj) then
 		return obj
 	
+	--It's a metaobject from a table.
 	elseif type(obj)=='table' then
+		
 		--Metatable property that identifies it's a metaobject!
 		local qush=getmetatable(obj).chiqish=='charMetaclass'
 		if qush then return obj.Character end
@@ -442,29 +444,37 @@ api={
 			return api.SetPremadeState{Character=char,State=state}
 		end
 		
-		return setmetatable({
-			SetState=setSt8,
-			SetPremadeState=setSt8,
-			Humanoid=char.Humanoid,
-			Character=char,
-		},{
-			chiqish='charMetaclass',
-			__index=function(t,k)
-				local o=propOf(k)
-				if o then
-					return o[k]
-				end
-			end,
-			__newindex=function(t,k,v)
-				local o=propOf(k)
-				if o then
-					pcall(function()
-						o[k]=v
-					end)
-				end
-			end,
-		})
+		return setmetatable(
+				{
+				SetState=setSt8,
+				SetPremadeState=setSt8,
+				Humanoid=char.Humanoid,
+				Character=char,
+			},{
+				chiqish='charMetaclass',
+				__index=function(t,k)
+					local o=propOf(k)
+					if o then
+						return o[k]
+					end
+				end,
+				__newindex=function(t,k,v)
+					local o=propOf(k)
+					if o then
+						pcall(function()
+							o[k]=v
+						end)
+					end
+				end,
+			}
+		)
 	end,
+	
+	--Wrapped in order to properly handle errors in the next scope down.
+	GetTweenInfo=function(...)return util.GetTweenInfo(...)end,
+	ExtractTweenInfo=function(...)return util.ExtractTweenInfo(...)end,
+	
+	--TweenService is now obselete!
 	Tween=function(options)
 		
 		--Instance
@@ -510,7 +520,7 @@ api={
 		end
 		
 		--Returns the TweenObject for advanced editing.
-		return require(script.Tween).doTween(ob,ti,{[pr]=tv})
+		return util.DoTween(ob,ti,{[pr]=tv})
 	end,
 }
 
@@ -6085,7 +6095,7 @@ end
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">SetCharAnimation</string>
 					<string name="ScriptGuid">{8754DC15-3EC6-4F02-880D-AD05F007B5F9}</string>
-					<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-02-22 • 2: 2018-06-02/2018-06-09 • +1 714 463 5142 //--
+					<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-02-22 • 2: 2018-06-02/2018-06-09 • 3: 2019-02-07 • +1 714 463 5142 //--
 
 local ksp=game:GetService'KeyframeSequenceProvider'
 local extraAnims={}
@@ -6105,7 +6115,7 @@ function createAnimTrack(char,a,params)
 	--Fills in the parameters.
 	for i,p in pairs(params or{}) do
 		if i:lower()~='speed' and not pcall(function()anim[i]=p end) then
-			error('\''..i..'\' is not a valid property of \'AnimationTrack\'')
+			error('\''..i..'\' is not a valid property of \'AnimationTrack\'',5)
 			return
 		end
 	end
@@ -6151,7 +6161,7 @@ end
 function playAnimationName(char,name,...)
 	local v=char.Animate:findFirstChild(name)
 	if not v then
-		error('No animation with the name \''..name'\' exists.')
+		error('No animation with the name \''..name'\' exists.',3)
 		return
 	end
 	playAnimation(char,v:FindFirstChildWhichIsA'Animation',...)
@@ -6165,7 +6175,7 @@ function playAnimationSeq(char,seq,...)
 	if game:service'RunService':IsStudio() then
 		return playAnimContent(char,ksp:RegisterActiveKeyframeSequence(seq),...)
 	else
-		error'Animations can only be played in Studio and when the game is running.'
+		error('Animations can only be played in Studio and when the game is running.',3)
 		return
 	end
 end
@@ -6201,22 +6211,22 @@ return{function(options)
 	
 	do local e
 		if not _G.AnimationAPI.IsID(id) then e=true
-			error'\'AnimID\' should be a positive integer.'
+			error('\'AnimID\' should be a positive integer.',2)
 		elseif not _G.AnimationAPI.IsCharacter(char)then e=true
-			error'\'Character\' is not a valid value.'
+			error('\'Character\' is not a valid value.',2)
 		elseif not name then
 			if seq and not seq:isA'KeyframeSequence' then e=true
-				error'\'AnimSequence\' is not a valid value.'
+				error('\'AnimSequence\' is not a valid value.',2)
 			elseif id and typeof(id)~='number' then e=true
-				error'\'AnimID\' is not a valid value.'
+				error('\'AnimID\' is not a valid value.',2)
 			end
 		end
 		
 		if seq and id then e=true
-			if name then error'\'AnimName\', \'AnimSequence\', and \'AnimID\' were all passed in; please only use one of them.'
+			if name then error('\'AnimName\', \'AnimSequence\', and \'AnimID\' were all passed in; please only use one of them.',2)
 			else error'Both \'AnimSequence\' and \'AnimID\' were passed in; please get rid of either one.'end
 		elseif not seq and not id then e=true
-			error'Neither \'AnimName\', \'AnimSequence\', nor \'AnimID\' were passed in; please include any one of them.'
+			error('Neither \'AnimName\', \'AnimSequence\', nor \'AnimID\' were passed in; please include any one of them.',2)
 		end
 		
 		if e then
@@ -6243,95 +6253,6 @@ end,stopCustomAnims}]]></ProtectedString>
 					<string name="Name">DOCUMENTATION</string>
 					<string name="ScriptGuid">{95357E0C-921A-4D42-AC4E-D58F03CFCBD6}</string>
 					<ProtectedString name="Source">--https://github.com/Windows81/Animation-API/wiki</ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBX139D4073C641490990AA875C3B3669FD">
-				<Properties>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">Tween</string>
-					<string name="ScriptGuid">{97F47369-9624-47AD-99FC-F68A1D5AD370}</string>
-					<ProtectedString name="Source"><![CDATA[--Code retrieved from RQ Trivia, a previous project of mine. // 1630228 // 2018-08-15/2018-10-02, 2019-01-07/2019-01-12 // +44 7031 959982
-
-local fT;fT={
-	--[[
-	--Generates a macro from a table of argument groups.
-	tweenFunc=function(tweenT,sync)
-		
-		--If it's synchronous...
-		local d=0 if sync then
-			for i,sub in pairs(tweenT) do
-				
-				--Gets the time tween takes to complete.
-				local tw=#sub==3 and sub[2]or nil
-				local t=tw and tw.Time+tw.DelayTime or 1
-				
-				--Maximum delay!
-				if t>d then d=t end
-			end
-		end
-		
-		return function()
-			local tweens={}
-			for i,sub in pairs(tweenT) do
-				tweens[i]=fT.createTween(unpack(sub))
-			end
-			
-			--Either wait or return the tween objects.
-			if sync then wait(d)else return tweens end
-		end,tweenT
-	end,
-	
-	--Shorthand for tweenFunc; automatically calls the macro.
-	tweenTable=function(...)return fT.tweenFunc(...)()end,
-	
-	--Instantly fulfills the actions of a tweenT argument group.
-	fulfilTween=function(tweenT)
-		for i,sub in pairs(tweenT) do
-			for prop,val in pairs(sub[#sub]) do
-				sub[1][prop]=val
-			end
-		end
-	end,
-	
-	--Generates functions for enumerated property-tweens.
-	tSwitch=function(modeT,currI)
-		local tObjs={}
-		
-		--Returns the metatable.
-		return{modes=modeT,
-			
-			--Changes the mode index.
-			setI=function(i)
-				tObjs=fT.tweenTable(modeT[i])
-				currI=i
-			end,
-			
-			--Changes the parameters of the mode.
-			setM=function(i,new)
-				modeT[i]=new
-				if i==currI then
-					
-					--Halts each and every current tween then disposes of them.
-					for i,g in pairs(tObjs) do g:Stop()g:Destroy()tObjs[i]=nil end
-					
-					--Fulfils the tweenies if going there!
-					fT.fulfilTween(new)
-				end
-			end,
-		}
-	end,
-	]]
-	
-	--Wrapper function for TweenService.
-	doTween=function(part,tI,props)
-		if not props then props=tI tI=TweenInfo.new() end
-		local t=game.TweenService:Create(part,tI,props)
-		t:Play()return t
-	end,
-}
-
-return fT]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
