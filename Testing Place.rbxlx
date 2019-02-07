@@ -161,20 +161,21 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">AnimationAPI</string>
 				<string name="ScriptGuid">{8E04FA97-7FE5-41B2-84DF-B71F74BC1741}</string>
-				<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-05-28/2018-06? • 2: 2019-01-06 • +1 714 463 5142 //--
+				<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-05-28/2018-06? • 2: 2019-01-06/2019-02-07 • +1 714 463 5142 //--
 local api
 
 --Pulls up the utility functions.
 local util=require(script.Util)
 
---Gets the character from that annoying metaclass.
+--Gets the character from that annoying metaobject (or itself).
 function getChar(obj)
+	
 	--Returns the character if it's not itself?
 	if api.IsCharacter(obj) then
 		return obj
 	
 	elseif type(obj)=='table' then
-		--Secret metatable property you'd never O'zbekiston'in guess!
+		--Metatable property that identifies it's a metaobject!
 		local qush=getmetatable(obj).chiqish=='charMetaclass'
 		if qush then return obj.Character end
 	end
@@ -225,6 +226,13 @@ api={
 	end,
 	IsCharacter=function(char)
 		return typeof(char)=='Instance'and char:FindFirstChildOfClass'Humanoid'
+	end,
+	IsCharMetaobject=function(char)
+		if typeof(char)=='table' then
+			local t=getmetatable(char)
+			return t and t.chiqish=='charMetaclass'
+		end
+		return false
 	end,
 	GetAppearance=function(options)
 		
@@ -414,7 +422,7 @@ api={
 	end,
 	
 	--Produces a metatable-built object that allows you to easily interact with a character's properties.
-	GetCharacterMetaclass=function(char)
+	GetCharacterMetaobject=function(char)
 		if not api.IsCharacter(char) then
 			error('Argument is not a valid Character object.',2)
 			return
@@ -6822,6 +6830,7 @@ end]]></ProtectedString>
 			<int name="MaxPlayersInternal">12</int>
 			<string name="Name">Players</string>
 			<int name="PreferredPlayersInternal">56832</int>
+			<float name="RespawnTime">5</float>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
