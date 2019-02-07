@@ -220,9 +220,9 @@ end
 
 --API METHODS
 api={
-	IsID=function(n)
-		return typeof(n)=='number'and n%1==0 and n>0
-	end,
+	
+	--Evaluator methods; intende to be used mainly for debugging purposes.
+	IsID=function(n)return typeof(n)=='number'and n%1==0 and n>0 end,
 	IsAppearance=function(app)
 		return typeof(app)=='Instance'and app:findFirstChild'IsR15'
 	end,
@@ -236,6 +236,8 @@ api={
 		end
 		return false
 	end,
+	
+	--Retrieves model containing the assets which the player is wearing.
 	GetAppearance=function(options)
 		
 		--Long
@@ -268,6 +270,7 @@ api={
 		return m
 	end,
 	
+	--'Dresses up' an empty rig with a specified user's appearance.
 	DressUpRig=function(options)
 		
 		--Long
@@ -333,6 +336,7 @@ api={
 		return char
 	end,
 	
+	--Generates a character with a given rig type from a specified user's appearance.
 	GenerateCharacter=function(options)
 
 		--Long
@@ -392,7 +396,8 @@ api={
 		
 		return char
 	end,
-
+	
+	--Hosted in a separate script since they're quite long.
 	PlayCharacterAnimation=require(script.SetCharAnimation)[1],
 	StopCharacterAnimation=require(script.SetCharAnimation)[2],
 	
@@ -423,7 +428,7 @@ api={
 		fireClients('SPMS',char,state)
 	end,
 	
-	--Produces a metatable-built object that allows you to easily interact with a character's properties.
+	--Makes an object that lets you easily interact with a character's properties.
 	GetCharacterMetaobject=function(char)
 		if not api.IsCharacter(char) then
 			error('Argument is not a valid Character object.',2)
