@@ -39,26 +39,26 @@
 		<Item class="Camera" referent="RBXAC26DCA67A954AEAA864537E3A963B11">
 			<Properties>
 				<CoordinateFrame name="CFrame">
-					<X>-53.4215469</X>
-					<Y>69.6057816</Y>
-					<Z>29.5446053</Z>
-					<R00>0.774080396</R00>
-					<R01>0.158218026</R01>
-					<R02>-0.612998068</R02>
-					<R10>7.4505806e-09</R10>
-					<R11>0.968267798</R11>
-					<R12>0.249915004</R12>
-					<R20>0.633087337</R20>
-					<R21>-0.19345431</R21>
-					<R22>0.749517083</R22>
+					<X>21.7032452</X>
+					<Y>32.4269257</Y>
+					<Z>-42.6596375</Z>
+					<R00>-0.858266473</R00>
+					<R01>-0.308664262</R01>
+					<R02>0.410006225</R02>
+					<R10>1.49011612e-08</R10>
+					<R11>0.798914254</R11>
+					<R12>0.601445138</R12>
+					<R20>-0.513204336</R20>
+					<R21>0.516200185</R21>
+					<R22>-0.685681283</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
-				<token name="CameraType">6</token>
+				<token name="CameraType">5</token>
 				<float name="FieldOfView">70</float>
 				<CoordinateFrame name="Focus">
-					<X>-41.1615868</X>
-					<Y>64.6074829</Y>
-					<Z>14.5542641</Z>
+					<X>20.8832321</X>
+					<Y>31.2240353</Y>
+					<Z>-41.2882729</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -159,12 +159,302 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="Script" referent="RBXF25080CF625940ABBE981F7BA61AFDAB">
+		<Item class="Part" referent="RBX3E47459A379B4ABE84F576332C7A7F41">
 			<Properties>
-				<bool name="Disabled">false</bool>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4284193356</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">1280</token>
+				<string name="Name">Baseplate</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>2048</X>
+					<Y>1</Y>
+					<Z>2048</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Folder" referent="RBX1DB1ACC2D8894E8A9A91C790C06D228C">
+			<Properties>
+				<string name="Name">TestingScripts</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="Script" referent="RBX320B4DD3020E4AC4A314EAB49152D40B">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">CycleOfStates</string>
+					<string name="ScriptGuid">{8E7D18C2-9768-48C5-B52E-1234AD379083}</string>
+					<ProtectedString name="Source"><![CDATA[while not _G.AnimationAPI do wait() end
+local api=_G.AnimationAPI
+
+for i,g in pairs(Enum.HumanoidStateType:GetEnumItems()) do
+	if g.Name~='Dead' then
+		local c repeat c=game.Players:children()[1] if c then c=c.Character end wait() until c
+		api.SetPremadeState{State=g,Character=c}
+		print(g)
+		wait(4)
+	end
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX0C93B0BA23F444C59E40D180C27B75E9">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">RevolvingRIgs</string>
+					<string name="ScriptGuid">{78357FA0-42E3-4362-8A93-95C7E89C7389}</string>
+					<ProtectedString name="Source"><![CDATA[local function p()
+	while #game.Players:children()<1 do wait() end
+	return game.Players:children()[1].Character.PrimaryPart.Position
+end
+
+while not _G.AnimationAPI do wait() end
+local api=_G.AnimationAPI
+
+local ids={
+	1630228,
+	968839,
+	20566913,
+}
+local count=40
+local layers=3
+
+local anims={
+	30196114,
+	337214386,
+	337440294,
+	337218119,
+	337406528,
+}
+
+for i=1,count do
+	local c=api.GetCharacterClass(api.GenerateCharacter{
+		CFrame=CFrame.new(p()),UserID=ids[(i-1)%#ids+1],
+		Rig='R6',Parent=game.Workspace,
+	})
+	--c.SetState(Enum.HumanoidStateType.Flying)
+	--c.BodyTypeScale.Value=1
+	local d=(2*math.pi*i/count*layers)
+	local l=math.ceil(i/count*layers)-1
+	api.SetCharacterAnimation{
+		AnimID=anims[(i-1)%#anims+1],
+		Character=c.Character,		
+		AnimParams={Looped=true,Speed=-1},
+	}
+	spawn(function()
+		while wait() do
+			local t=tick()*((l%2)*2-1)/5
+			local t1=3*l+7--+5*math.sin(tick()*math.pi/6)
+			c.WalkToPoint=p()+Vector3.new(t1*math.cos(t+d),0,t1*math.sin(t+d))
+		end
+	end)
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBXA4F3D20FF1934022A38DC900B92655B4">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">SpinningCamera</string>
+					<string name="ScriptGuid">{550606AE-5302-4093-A18C-435E63230295}</string>
+					<ProtectedString name="Source"><![CDATA[while not _G.AnimationAPI do wait() end
+local api=_G.AnimationAPI
+local cc=game.workspace.CurrentCamera
+
+local ch repeat
+	ch=game.Players:children()[1]
+	if ch then ch=ch.Character end
+	wait()
+until ch
+
+local c=0 while true do
+	local r=math.sin(math.pi*c/13)*math.pi/3
+	local cf=ch.HumanoidRootPart.CFrame
+		*CFrame.Angles(0,r,0)*CFrame.new(0,1,10)
+	local fo=ch.HumanoidRootPart.CFrame
+	game.Workspace.CurrentCamera.CameraType='Fixed'
+	
+	local t=c>0 and .25 or 0
+	api.Tween{Object=cc,ToValue=cf,Property='CFrame',Time=t}
+	api.Tween{Object=cc,ToValue=fo,Property='Focus',Time=t}
+	wait(t)
+	c=c+1
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBXF491DA5E902348D083FADD7179626CC4">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">SceneTest1</string>
+					<string name="ScriptGuid">{02BE5D47-73ED-449D-B525-3A84DBF68A1E}</string>
+					<ProtectedString name="Source"><![CDATA[--Preloads the appearance up from outside the API.
+local a=game.Players:GetCharacterAppearanceAsync(1630228)
+
+while not _G.AnimationAPI do wait() end
+local api=_G.AnimationAPI
+
+local z=17
+api.MoveCamera{CFrame=CFrame.new(7,5,0),Focus=CFrame.new(0,5,0)}
+local char=api.GenerateCharacter{CFrame=CFrame.new(0,20,z),Appearance=a,Rig='R15'}
+wait(1)
+
+while true do
+	z=z*-1
+	char.Humanoid.WalkToPoint=Vector3.new(0,0,z)
+	wait(3)
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="SpawnLocation" referent="RBX572F3A8A8A594EA7BA102CD7CD2F9305">
+			<Properties>
+				<bool name="AllowTeamChangeOnTouch">false</bool>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">0</token>
+				<token name="BottomSurfaceInput">0</token>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<int name="Duration">10</int>
+				<bool name="Enabled">true</bool>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">false</bool>
+				<bool name="Massless">false</bool>
+				<token name="Material">256</token>
+				<string name="Name">SpawnLocation</string>
+				<bool name="Neutral">true</bool>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<int name="RootPriority">0</int>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
+				<int name="TeamColor">194</int>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">0</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">1</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>0.0500000007</X>
+					<Y>0.0500000007</Y>
+					<Z>0.0500000007</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="ModuleScript" referent="RBX815F2A3D964640A69052594905D3FA28">
+			<Properties>
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">AnimationAPI</string>
-				<string name="ScriptGuid">{8E04FA97-7FE5-41B2-84DF-B71F74BC1741}</string>
+				<string name="ScriptGuid">{C5FC5985-3EEF-4838-B927-F9BDC1F501B6}</string>
 				<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-05-28/2018-06? • 2: 2019-01-06/2019-02-07 • +1 714 463 5142 //--
 local api
 
@@ -329,10 +619,17 @@ api={
 		local face=char:findFirstChild'face'
 		if face then face.Parent=char.Head end
 		
+		local last
+		local pU=require(script.PackageUtil)
 		local rigS=char.Humanoid.RigType.Name
 		for i,o in pairs(app:children()) do
-			if o.Name==rigS then
-				util.ApplyPackage(char,rigS,o)
+			
+			--Apllies the body part.
+			if o.Name==rigS or o.Name==rigS..'ArtistIntent'then
+				pU.ApplyBodyPart(char,rigS,o)
+				last=o
+			
+			--Adding character-related animations.
 			elseif o.Name==rigS..'Anim' then
 				local s=char.Animate
 				for i,a in pairs(o:children()) do
@@ -340,15 +637,24 @@ api={
 					if e then e:destroy() end
 					a.Parent=s
 				end
+			
+			--Scaling values.
 			elseif o:isA'ValueBase'then
 				o.Parent=char.Humanoid
+			
+			--The head's taken care of.
 			elseif o:isA'SpecialMesh'then
 				o.Parent=char.Head
 				char.Head.Mesh:destroy()
+			
+			--Hats, shirts, etc.
 			elseif not o:isA'Folder'then
 				o.Parent=char
 			end
 		end
+		
+		--The other script said it's more efficient, so we're putting it in.
+		if rigS=='R15' then	pU.BuildRigFromAttachments(last,char.HumanoidRootPart)end
 		
 		local bc=char:findFirstChild'Body Colors'
 		if bc then bc.Parent=nil bc.Parent=char end
@@ -406,7 +712,7 @@ api={
 			return end
 		end
 		
-		local char=script[rigS]:clone()
+		local char=script[rigS.Name]:clone()
 		options.Character=char
 		char.Animate.Disabled=false
 		char.Parent=par
@@ -433,7 +739,7 @@ api={
 		--HumanoidStateType or nil
 		local oSt=options.State
 		local hst=Enum.HumanoidStateType
-		local state=util.GetEnumValue(hst,options.State)
+		local state=util.GetEnumValue(options.State,hst)
 		
 		--Character
 		local char=getChar(options.Character)
@@ -501,13 +807,15 @@ api={
 		)
 	end,
 	
-	--Toggles whether the players are shown.
+	--TODO: Toggles whether the players are shown.
 	TogglePlayers=function(options)
 		
 		--String ('all', 'others', or 'self')
 		local m=options.Mode
 		
 		do local e
+			
+		end
 	end,
 	
 	--Wrapped in order to properly handle errors in the next scope down.
@@ -621,13 +929,96 @@ api={
 --A pretty good threshold to go to.
 wait(math.pi)
 
-_G.AnimationAPI=api]]></ProtectedString>
+_G.AnimationAPI=api
+return api]]></ProtectedString>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
+			<Item class="Script" referent="RBX3114231D8FF14CF4916DC446614EF771">
+				<Properties>
+					<bool name="Disabled">true</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">DOCUMENTATION</string>
+					<string name="ScriptGuid">{95357E0C-921A-4D42-AC4E-D58F03CFCBD6}</string>
+					<ProtectedString name="Source">--https://github.com/Windows81/Animation-API/wiki</ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="LocalScript" referent="RBXE105279A23B54CDE9C8B31E794CD51EA">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">AnimLocal</string>
+					<string name="ScriptGuid">{92C4FD5C-2DA8-4D73-BE60-F3BB83FC0467}</string>
+					<ProtectedString name="Source"><![CDATA[--Initialises the mainoest variables.
+local evt=script.Event.Value
+local main=evt.Parent
+local util=require(main.Util)
+
+--It's all the developers' fault this has to be.
+local humanoidSt8s={}
+for i,st in pairs(Enum.HumanoidStateType:GetEnumItems()) do
+	if st.Name~='None' then
+		humanoidSt8s[#humanoidSt8s+1]=st
+	end
+end
+
+--The intro to the client's dabble.
+function c(name,...)
+	if name=='SPMS' then
+		local char,state=...
+		for i,e in pairs(humanoidSt8s) do
+			--The 'not state' means that making it nil will enable all states.
+			char.Humanoid:SetStateEnabled(e,not state or e==state)
+		end
+		char.Humanoid:ChangeState(state)
+		
+	--Tweens the CurrentCamera locally, since it doesn't replicate from the server.
+	elseif name=='TCam' then
+		local tiT,pr,tv=...
+		local ti=util.GetTweenInfo(tiT)
+		local cc=game.Workspace.CurrentCamera
+		
+		--Ensures the camera tween works well and all.
+		if cc.CameraType~=Enum.CameraType.Scriptable then
+			cc.CameraType='Scriptable'warn'CameraType set to \'Scriptable\''
+		end
+		
+		--Exxxecute the plan.
+		util.DoTween(cc,ti,{[pr]=tv})
+		
+	--MoveCamera is here.
+	elseif name=='MC' then
+		local cc=game.Workspace.CurrentCamera
+		
+		--Ensures the camera tween works well and all.
+		if cc.CameraType~=Enum.CameraType.Scriptable then
+			cc.CameraType='Scriptable'warn'CameraType set to \'Scriptable\''
+		end
+		
+		--Exxxecute.
+		local cf,fo=...
+		cf=CFrame.new(cf.p,fo.p)
+		cc.CFrame,cc.Focus=cf,fo
+	end
+end
+
+--Connects the events over.
+if evt:isA'BindableEvent' then evt.Event:Connect(c)
+else evt.OnClientEvent:Connect(c) end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="ObjectValue" referent="RBXBF10D3B3E3244B468DCA7EB1874BF1E6">
+					<Properties>
+						<string name="Name">Event</string>
+						<BinaryString name="Tags"></BinaryString>
+						<Ref name="Value">RBXF6130EABD6424F458EB9AEF73F77BA19</Ref>
+					</Properties>
+				</Item>
+			</Item>
 			<Item class="ModuleScript" referent="RBX98AF2263B7F44569B3179A56FBD44F3B">
 				<Properties>
 					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">ApplyPackage</string>
+					<string name="Name">ApplyBodyPart</string>
 					<string name="ScriptGuid">{EA314A9A-15A0-4E89-BBF4-C21045877DA8}</string>
 					<ProtectedString name="Source"><![CDATA[--Originally designed by the character development team for R15, but reformatted to the tune of Respected Leader uid:1630228.
 
@@ -688,7 +1079,7 @@ function applyBodyPart(character,rigType,folder)
 		end
 		--Rebuilds the rig.
 		--Note: if applying many body parts at once, it is more efficient to call this after applying them all.
-		buildRigFromAttachments(nil,character.HumanoidRootPart)
+		--buildRigFromAttachments(nil,character.HumanoidRootPart)
 	else
 		for _,characterMesh in pairs(folder:GetChildren()) do
 			local oldCharacterMesh=getOldCharacterMesh(character,characterMesh)
@@ -700,7 +1091,288 @@ function applyBodyPart(character,rigType,folder)
 	end
 end
 
-return applyBodyPart]]></ProtectedString>
+return {ApplyBodyPart=applyBodyPart,BuildRigFromAttachments=buildRigFromAttachments}]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="BindableEvent" referent="RBX46E6D090052A457D99B83CB14E723DDA">
+				<Properties>
+					<string name="Name">BindableEvent</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="RemoteEvent" referent="RBXF6130EABD6424F458EB9AEF73F77BA19">
+				<Properties>
+					<string name="Name">RemoteEvent</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX2311CD3D6579415AAC91610383BE538C">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">SetCharAnimation</string>
+					<string name="ScriptGuid">{8754DC15-3EC6-4F02-880D-AD05F007B5F9}</string>
+					<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-02-22 • 2: 2018-06-02/2018-06-09 • 3: 2019-02-07 • +1 714 463 5142 //--
+
+local ksp=game:GetService'KeyframeSequenceProvider'
+local extraAnims={}
+local valid=true
+
+function charAnimExists(char)
+	return not not extraAnims[char]
+end
+
+function firstCase(s)
+	return s:sub(1,1):upper()..s:sub(2):lower()
+end
+
+function createAnimTrack(char,a,params)
+	local anim=char.Humanoid.Animator:LoadAnimation(a)
+	
+	--Fills in the parameters.
+	for i,p in pairs(params or{}) do
+		if i:lower()~='speed' and not pcall(function()anim[i]=p end) then
+			error('\''..i..'\' is not a valid property of \'AnimationTrack\'',5)
+			return
+		end
+	end
+	return anim
+end
+
+function createAnim(content)
+	local a=Instance.new'Animation'
+	a.AnimationId=content
+	return a
+end
+
+function playAnimContent(char,c,...)
+	playAnimation(char,createAnim(c),...)
+end
+
+function playAnimation(char,a,params)
+	local tracks=char.Humanoid:GetPlayingAnimationTracks()
+	for i,t in pairs(tracks) do
+		t:Stop()
+		t:destroy()
+	end
+	
+	if charAnimExists(char) then
+		local anim=extraAnims[char]
+		anim:Stop()
+		anim:destroy()
+	end
+	
+	char.Animate.Disabled=true
+	local anim=createAnimTrack(char,a,params)
+	extraAnims[char]=anim
+	anim:Play(nil,nil,params.Speed)
+	if not anim.Looped then
+		--Keeping to the API's asynchronous theme!
+		spawn(function()
+			anim.Stopped:wait()
+			stopCustomAnims(char)
+		end)
+	end
+end
+
+function playAnimationName(char,name,...)
+	local v=char.Animate:findFirstChild(name)
+	if not v then
+		error('No animation with the name \''..name'\' exists.',3)
+		return
+	end
+	playAnimation(char,v:FindFirstChildWhichIsA'Animation',...)
+end
+
+function playAnimationID(char,id,...)
+	return playAnimContent(char,'http://www.roblox.com/asset/?id='..id,...)
+end
+
+function playAnimationSeq(char,seq,...)
+	if game:service'RunService':IsStudio() then
+		return playAnimContent(char,ksp:RegisterActiveKeyframeSequence(seq),...)
+	else
+		error('Animations can only be played in Studio and when the game is running.',3)
+		return
+	end
+end
+
+function stopCustomAnims(char)
+	char.Animate.Disabled=false
+end
+
+function getSeqFromChar(char)
+	for seq,t in pairs(extraAnims) do
+		if t.char==char then
+			return seq
+		end
+	end
+end
+
+return{function(options)
+	
+	--Character
+	local char=options.Character
+	
+	--Animation Sequence
+	local seq=options.AnimSequence
+	
+	--Long
+	local id=options.AnimID
+	
+	--String
+	local name=options.AnimName
+	
+	--Property table
+	local params=options.AnimParams
+	
+	do local e
+		if not _G.AnimationAPI.IsID(id) then e=true
+			error('\'AnimID\' should be a positive integer.',2)
+		elseif not _G.AnimationAPI.IsCharacter(char)then e=true
+			error('\'Character\' is not a valid value.',2)
+		elseif not name then
+			if seq and not seq:isA'KeyframeSequence' then e=true
+				error('\'AnimSequence\' is not a valid value.',2)
+			elseif id and typeof(id)~='number' then e=true
+				error('\'AnimID\' is not a valid value.',2)
+			end
+		end
+		
+		if seq and id then e=true
+			if name then error('\'AnimName\', \'AnimSequence\', and \'AnimID\' were all passed in; please only use one of them.',2)
+			else error'Both \'AnimSequence\' and \'AnimID\' were passed in; please get rid of either one.'end
+		elseif not seq and not id then e=true
+			error('Neither \'AnimName\', \'AnimSequence\', nor \'AnimID\' were passed in; please include any one of them.',2)
+		end
+		
+		if e then
+		return end
+	end
+	
+	if name then
+		playAnimationName(char,name,params)
+	elseif seq then
+		playAnimationSeq(char,seq,params)
+	elseif id then
+		playAnimationID(char,id,params)
+	else
+		stopCustomAnims(char)
+	end
+end,stopCustomAnims}]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBXAF95A7F8C7B64E10A1DD9E1444542F27">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">Util</string>
+					<string name="ScriptGuid">{DDA949B7-25EC-4450-8386-2BAF7BD9BCD9}</string>
+					<ProtectedString name="Source"><![CDATA[local function GetEnumValue(enum,eType)
+	
+	--Checks if 'eType' is a valid Enum type-string.
+	local vEnumStr=type(eType)=='string'and
+		pcall(function()return Enum[eType]end)
+	
+	--Either converts the 'eType' to its Enum object or errors out.
+	if vEnumStr then eType=Enum[eType]
+	elseif typeof(eType)~='Enum' then
+		--error('Internal: \'eType\' is not valid.',2)
+		return
+	end
+	
+	--This is where we assume 'eType' is an Enum.
+	
+	--Checks if the EnumItem was already passed into and returns conditionally.
+	if typeof(enum)=='EnumItem'and enum.EnumType==eType then return enum end
+	
+	--Check if it's a valid EnumItem's name.
+	local vEName=pcall(function()return eType[enum]end)
+	
+	--Either returns the EnumItem associated or errors out.
+	if vEName then return eType[enum]
+	elseif enum then
+		--error('Internal: \'enum\' is not valid.',2)
+		return
+	end
+end
+
+--Generates a TweenInfo from the provided options.
+local function getTweenInfo(options)
+	
+	--Returns the default TweenInfo if it's nil.
+	if not options then return TweenInfo.new()end
+	
+	--TweenInfo
+	local ti=options.TweenInfo
+	
+	--Positive Float or 0
+	local t=options.Time
+	
+	--EasingStyle
+	local es=options.EasingStyle
+	
+	--EasingDirection
+	local ed=options.EasingDirection
+	
+	--Positive Integer or 0
+	local rp=options.RepeatCount
+	
+	--Boolean
+	local rv=options.Reverses
+	
+	--Positive Float
+	local dl=options.DelayTime
+	
+	--No need to process if you've already got it.
+	if typeof(ti)=='TweenInfo' then return ti end
+	
+	--Checks the EasingStyle.
+	if not es then es=Enum.EasingStyle.Linear else es=GetEnumValue('EasingStyle',es)end
+	if not es then error('\'EasingStyle\' is not a valid value.',3)return end
+	
+	--Checks the EasingDirection.
+	if not ed then ed=Enum.EasingDirection.InOut else ed=GetEnumValue('EasingDirection',ed)end
+	if not ed then error('\'EasingDirection\' is not a valid value.',3)return end
+	
+	--Check the time.
+	if not t then t=1 elseif typeof(t)~='number'or t<0 then
+		error('\'Time\' is not a positive number; time only goes backwards when the music goes backwards too.',3)
+	end
+	
+	--Checks out the other values (RepeatCount, reverses, delay).
+	if not rp then rp=0 elseif type(rp)~='number'or rp%1>0 or rp<0 then error('\'RepeatCount\' is not a valid integer.',3)return end
+	if not rv then rv=false elseif type(rv)~='boolean'then error('\'Reverses\' is not a valid boolean value.',3)return end
+	if not dl then dl=0 elseif type(dl)~='number'or dl<0 then error('\'DelayTime\' is not a valid number.',3)return end
+	
+	--Returns the generated TweenInfo.
+	return TweenInfo.new(t,es,ed,rp,rv,dl)
+end
+
+--Converts the TweenInfo to a table, so that it may be reprocessed in GetTweenInfo.
+local function extractTweenInfo(ti)
+	return{
+		Time=ti.Time,
+		EasingStyle=ti.EasingStyle,
+		EasingDirection=ti.EasingDirection,
+		RepeatCount=ti.RepeatCount,
+		Reverses=ti.Reverses,
+		DelayTime=ti.DelayTime,
+	}
+end
+
+local function doTween(part,tI,props)
+	if not props then props=tI tI=TweenInfo.new() end
+	local t=game.TweenService:Create(part,tI,props)
+	t:Play()return t
+end
+
+return{
+	GetEnumValue=GetEnumValue,
+	GetTweenInfo=getTweenInfo,
+	ExtractTweenInfo=extractTweenInfo,
+	DoTween=doTween,
+}]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
@@ -6182,661 +6854,32 @@ end
 					</Item>
 				</Item>
 			</Item>
-			<Item class="ModuleScript" referent="RBX2311CD3D6579415AAC91610383BE538C">
+			<Item class="Folder" referent="RBXAA10B20D95704901AF694E6F38CDF1AC">
 				<Properties>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">SetCharAnimation</string>
-					<string name="ScriptGuid">{8754DC15-3EC6-4F02-880D-AD05F007B5F9}</string>
-					<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-02-22 • 2: 2018-06-02/2018-06-09 • 3: 2019-02-07 • +1 714 463 5142 //--
-
-local ksp=game:GetService'KeyframeSequenceProvider'
-local extraAnims={}
-local valid=true
-
-function charAnimExists(char)
-	return not not extraAnims[char]
-end
-
-function firstCase(s)
-	return s:sub(1,1):upper()..s:sub(2):lower()
-end
-
-function createAnimTrack(char,a,params)
-	local anim=char.Humanoid.Animator:LoadAnimation(a)
-	
-	--Fills in the parameters.
-	for i,p in pairs(params or{}) do
-		if i:lower()~='speed' and not pcall(function()anim[i]=p end) then
-			error('\''..i..'\' is not a valid property of \'AnimationTrack\'',5)
-			return
-		end
-	end
-	return anim
-end
-
-function createAnim(content)
-	local a=Instance.new'Animation'
-	a.AnimationId=content
-	return a
-end
-
-function playAnimContent(char,c,...)
-	playAnimation(char,createAnim(c),...)
-end
-
-function playAnimation(char,a,params)
-	local tracks=char.Humanoid:GetPlayingAnimationTracks()
-	for i,t in pairs(tracks) do
-		t:Stop()
-		t:destroy()
-	end
-	
-	if charAnimExists(char) then
-		local anim=extraAnims[char]
-		anim:Stop()
-		anim:destroy()
-	end
-	
-	char.Animate.Disabled=true
-	local anim=createAnimTrack(char,a,params)
-	extraAnims[char]=anim
-	anim:Play(nil,nil,params.Speed)
-	if not anim.Looped then
-		--Keeping to the API's asynchronous theme!
-		spawn(function()
-			anim.Stopped:wait()
-			stopCustomAnims(char)
-		end)
-	end
-end
-
-function playAnimationName(char,name,...)
-	local v=char.Animate:findFirstChild(name)
-	if not v then
-		error('No animation with the name \''..name'\' exists.',3)
-		return
-	end
-	playAnimation(char,v:FindFirstChildWhichIsA'Animation',...)
-end
-
-function playAnimationID(char,id,...)
-	return playAnimContent(char,'http://www.roblox.com/asset/?id='..id,...)
-end
-
-function playAnimationSeq(char,seq,...)
-	if game:service'RunService':IsStudio() then
-		return playAnimContent(char,ksp:RegisterActiveKeyframeSequence(seq),...)
-	else
-		error('Animations can only be played in Studio and when the game is running.',3)
-		return
-	end
-end
-
-function stopCustomAnims(char)
-	char.Animate.Disabled=false
-end
-
-function getSeqFromChar(char)
-	for seq,t in pairs(extraAnims) do
-		if t.char==char then
-			return seq
-		end
-	end
-end
-
-return{function(options)
-	
-	--Character
-	local char=options.Character
-	
-	--Animation Sequence
-	local seq=options.AnimSequence
-	
-	--Long
-	local id=options.AnimID
-	
-	--String
-	local name=options.AnimName
-	
-	--Property table
-	local params=options.AnimParams
-	
-	do local e
-		if not _G.AnimationAPI.IsID(id) then e=true
-			error('\'AnimID\' should be a positive integer.',2)
-		elseif not _G.AnimationAPI.IsCharacter(char)then e=true
-			error('\'Character\' is not a valid value.',2)
-		elseif not name then
-			if seq and not seq:isA'KeyframeSequence' then e=true
-				error('\'AnimSequence\' is not a valid value.',2)
-			elseif id and typeof(id)~='number' then e=true
-				error('\'AnimID\' is not a valid value.',2)
-			end
-		end
-		
-		if seq and id then e=true
-			if name then error('\'AnimName\', \'AnimSequence\', and \'AnimID\' were all passed in; please only use one of them.',2)
-			else error'Both \'AnimSequence\' and \'AnimID\' were passed in; please get rid of either one.'end
-		elseif not seq and not id then e=true
-			error('Neither \'AnimName\', \'AnimSequence\', nor \'AnimID\' were passed in; please include any one of them.',2)
-		end
-		
-		if e then
-		return end
-	end
-	
-	if name then
-		playAnimationName(char,name,params)
-	elseif seq then
-		playAnimationSeq(char,seq,params)
-	elseif id then
-		playAnimationID(char,id,params)
-	else
-		stopCustomAnims(char)
-	end
-end,stopCustomAnims}]]></ProtectedString>
+					<string name="Name">Executers</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-			</Item>
-			<Item class="Script" referent="RBX3114231D8FF14CF4916DC446614EF771">
-				<Properties>
-					<bool name="Disabled">true</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">DOCUMENTATION</string>
-					<string name="ScriptGuid">{95357E0C-921A-4D42-AC4E-D58F03CFCBD6}</string>
-					<ProtectedString name="Source">--https://github.com/Windows81/Animation-API/wiki</ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-			<Item class="LocalScript" referent="RBXE105279A23B54CDE9C8B31E794CD51EA">
-				<Properties>
-					<bool name="Disabled">false</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">AnimLocal</string>
-					<string name="ScriptGuid">{92C4FD5C-2DA8-4D73-BE60-F3BB83FC0467}</string>
-					<ProtectedString name="Source"><![CDATA[--Initialises the mainoest variables.
-local evt=script.Event.Value
-local main=evt.Parent
-local util=require(main.Util)
-
---It's all the developers' fault this has to be.
-local humanoidSt8s={}
-for i,st in pairs(Enum.HumanoidStateType:GetEnumItems()) do
-	if st.Name~='None' then
-		humanoidSt8s[#humanoidSt8s+1]=st
-	end
-end
-
---The intro to the client's dabble.
-function c(name,...)
-	if name=='SPMS' then
-		local char,state=...
-		for i,e in pairs(humanoidSt8s) do
-			--The 'not state' means that making it nil will enable all states.
-			char.Humanoid:SetStateEnabled(e,not state or e==state)
-		end
-		char.Humanoid:ChangeState(state)
-		
-	--Tweens the CurrentCamera locally, since it doesn't replicate from the server.
-	elseif name=='TCam' then
-		local tiT,pr,tv=...
-		local ti=util.GetTweenInfo(tiT)
-		local cc=game.Workspace.CurrentCamera
-		
-		--Ensures the camera tween works well and all.
-		if cc.CameraType~=Enum.CameraType.Scriptable then
-			cc.CameraType='Scriptable'warn'CameraType set to \'Scriptable\''
-		end
-		
-		--Exxxecute the plan.
-		util.DoTween(cc,ti,{[pr]=tv})
-		
-	--MoveCamera is here.
-	elseif name=='MC' then
-		local cc=game.Workspace.CurrentCamera
-		
-		--Ensures the camera tween works well and all.
-		if cc.CameraType~=Enum.CameraType.Scriptable then
-			cc.CameraType='Scriptable'warn'CameraType set to \'Scriptable\''
-		end
-		
-		--Exxxecute.
-		local cf,fo=...
-		cf=CFrame.new(cf.p,fo.p)
-		cc.CFrame,cc.Focus=cf,fo
-	end
-end
-
---Connects the events over.
-if evt:isA'BindableEvent' then evt.Event:Connect(c)
-else evt.OnClientEvent:Connect(c) end]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-				<Item class="ObjectValue" referent="RBXBF10D3B3E3244B468DCA7EB1874BF1E6">
+				<Item class="LocalScript" referent="RBXD2FBC0CE27A04FD698226DCC3AC25454">
 					<Properties>
-						<string name="Name">Event</string>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">ClientCall</string>
+						<string name="ScriptGuid">{993B8F55-47E9-4514-A184-82022082A53B}</string>
+						<ProtectedString name="Source">require(script.Parent.Parent)</ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
-						<Ref name="Value">RBXF6130EABD6424F458EB9AEF73F77BA19</Ref>
+					</Properties>
+				</Item>
+				<Item class="Script" referent="RBXA37DD5336B6B4A5D92795306CE91E677">
+					<Properties>
+						<bool name="Disabled">false</bool>
+						<Content name="LinkedSource"><null></null></Content>
+						<string name="Name">ServerCall</string>
+						<string name="ScriptGuid">{A928BA21-4FC2-4AAB-A2D0-C3C70DEBF7F2}</string>
+						<ProtectedString name="Source">require(script.Parent.Parent)</ProtectedString>
+						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="RemoteEvent" referent="RBXF6130EABD6424F458EB9AEF73F77BA19">
-				<Properties>
-					<string name="Name">RemoteEvent</string>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-			<Item class="BindableEvent" referent="RBX46E6D090052A457D99B83CB14E723DDA">
-				<Properties>
-					<string name="Name">BindableEvent</string>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-			<Item class="ModuleScript" referent="RBXAF95A7F8C7B64E10A1DD9E1444542F27">
-				<Properties>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">Util</string>
-					<string name="ScriptGuid">{DDA949B7-25EC-4450-8386-2BAF7BD9BCD9}</string>
-					<ProtectedString name="Source"><![CDATA[local function GetEnumValue(eType,enum)
-	
-	--Checks if 'eType' is a valid Enum type-string.
-	local vEnumStr=type(eType)=='string'and
-		pcall(function()return Enum[eType]end)
-	
-	--Either converts the 'eType' to its Enum object or errors out.
-	if vEnumStr then eType=Enum[eType]
-	elseif typeof(eType)~='Enum' then
-		--error('Internal: \'eType\' is not valid.',2)
-		return
-	end
-	
-	--This is where we assume 'eType' is an Enum.
-	
-	--Checks if the EnumItem was already passed into and returns conditionally.
-	if typeof(enum)=='EnumItem'and enum.EnumType==eType then return enum end
-	
-	--Check if it's a valid EnumItem's name.
-	local vEName=pcall(function()return eType[enum]end)
-	
-	--Either returns the EnumItem associated or errors out.
-	if vEName then return eType[enum]
-	elseif enum then
-		--error('Internal: \'enum\' is not valid.',2)
-		return
-	end
-end
-
---Generates a TweenInfo from the provided options.
-local function getTweenInfo(options)
-	
-	--Returns the default TweenInfo if it's nil.
-	if not options then return TweenInfo.new()end
-	
-	--TweenInfo
-	local ti=options.TweenInfo
-	
-	--Positive Float or 0
-	local t=options.Time
-	
-	--EasingStyle
-	local es=options.EasingStyle
-	
-	--EasingDirection
-	local ed=options.EasingDirection
-	
-	--Positive Integer or 0
-	local rp=options.RepeatCount
-	
-	--Boolean
-	local rv=options.Reverses
-	
-	--Positive Float
-	local dl=options.DelayTime
-	
-	--No need to process if you've already got it.
-	if typeof(ti)=='TweenInfo' then return ti end
-	
-	--Checks the EasingStyle.
-	if not es then es=Enum.EasingStyle.Linear else es=GetEnumValue('EasingStyle',es)end
-	if not es then error('\'EasingStyle\' is not a valid value.',3)return end
-	
-	--Checks the EasingDirection.
-	if not ed then ed=Enum.EasingDirection.InOut else ed=GetEnumValue('EasingDirection',ed)end
-	if not ed then error('\'EasingDirection\' is not a valid value.',3)return end
-	
-	--Check the time.
-	if not t then t=1 elseif typeof(t)~='number'or t<0 then
-		error('\'Time\' is not a positive number; time only goes backwards when the music goes backwards too.',3)
-	end
-	
-	--Checks out the other values (RepeatCount, reverses, delay).
-	if not rp then rp=0 elseif type(rp)~='number'or rp%1>0 or rp<0 then error('\'RepeatCount\' is not a valid integer.',3)return end
-	if not rv then rv=false elseif type(rv)~='boolean'then error('\'Reverses\' is not a valid boolean value.',3)return end
-	if not dl then dl=0 elseif type(dl)~='number'or dl<0 then error('\'DelayTime\' is not a valid number.',3)return end
-	
-	--Returns the generated TweenInfo.
-	return TweenInfo.new(t,es,ed,rp,rv,dl)
-end
-
---Converts the TweenInfo to a table, so that it may be reprocessed in GetTweenInfo.
-local function extractTweenInfo(ti)
-	return{
-		Time=ti.Time,
-		EasingStyle=ti.EasingStyle,
-		EasingDirection=ti.EasingDirection,
-		RepeatCount=ti.RepeatCount,
-		Reverses=ti.Reverses,
-		DelayTime=ti.DelayTime,
-	}
-end
-
-local function doTween(part,tI,props)
-	if not props then props=tI tI=TweenInfo.new() end
-	local t=game.TweenService:Create(part,tI,props)
-	t:Play()return t
-end
-
-return{
-	ApplyPackage=require(script.Parent.ApplyPackage),
-	GetEnumValue=GetEnumValue,
-	GetTweenInfo=getTweenInfo,
-	ExtractTweenInfo=extractTweenInfo,
-	DoTween=doTween,
-}]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-		</Item>
-		<Item class="Part" referent="RBX3E47459A379B4ABE84F576332C7A7F41">
-			<Properties>
-				<bool name="Anchored">true</bool>
-				<float name="BackParamA">-0.5</float>
-				<float name="BackParamB">0.5</float>
-				<token name="BackSurface">0</token>
-				<token name="BackSurfaceInput">0</token>
-				<float name="BottomParamA">-0.5</float>
-				<float name="BottomParamB">0.5</float>
-				<token name="BottomSurface">4</token>
-				<token name="BottomSurfaceInput">0</token>
-				<CoordinateFrame name="CFrame">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>0</R02>
-					<R10>0</R10>
-					<R11>1</R11>
-					<R12>0</R12>
-					<R20>0</R20>
-					<R21>0</R21>
-					<R22>1</R22>
-				</CoordinateFrame>
-				<bool name="CanCollide">true</bool>
-				<int name="CollisionGroupId">0</int>
-				<Color3uint8 name="Color3uint8">4284193356</Color3uint8>
-				<PhysicalProperties name="CustomPhysicalProperties">
-					<CustomPhysics>false</CustomPhysics>
-				</PhysicalProperties>
-				<float name="FrontParamA">-0.5</float>
-				<float name="FrontParamB">0.5</float>
-				<token name="FrontSurface">0</token>
-				<token name="FrontSurfaceInput">0</token>
-				<float name="LeftParamA">-0.5</float>
-				<float name="LeftParamB">0.5</float>
-				<token name="LeftSurface">0</token>
-				<token name="LeftSurfaceInput">0</token>
-				<bool name="Locked">true</bool>
-				<bool name="Massless">false</bool>
-				<token name="Material">1280</token>
-				<string name="Name">Baseplate</string>
-				<float name="Reflectance">0</float>
-				<float name="RightParamA">-0.5</float>
-				<float name="RightParamB">0.5</float>
-				<token name="RightSurface">0</token>
-				<token name="RightSurfaceInput">0</token>
-				<int name="RootPriority">0</int>
-				<Vector3 name="RotVelocity">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<BinaryString name="Tags"></BinaryString>
-				<float name="TopParamA">-0.5</float>
-				<float name="TopParamB">0.5</float>
-				<token name="TopSurface">0</token>
-				<token name="TopSurfaceInput">0</token>
-				<float name="Transparency">1</float>
-				<Vector3 name="Velocity">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<token name="formFactorRaw">1</token>
-				<token name="shape">1</token>
-				<Vector3 name="size">
-					<X>2048</X>
-					<Y>1</Y>
-					<Z>2048</Z>
-				</Vector3>
-			</Properties>
-		</Item>
-		<Item class="Folder" referent="RBX1DB1ACC2D8894E8A9A91C790C06D228C">
-			<Properties>
-				<string name="Name">TestingScripts</string>
-				<BinaryString name="Tags"></BinaryString>
-			</Properties>
-			<Item class="Script" referent="RBX320B4DD3020E4AC4A314EAB49152D40B">
-				<Properties>
-					<bool name="Disabled">true</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">CycleOfStates</string>
-					<string name="ScriptGuid">{8E7D18C2-9768-48C5-B52E-1234AD379083}</string>
-					<ProtectedString name="Source"><![CDATA[while not _G.AnimationAPI do wait() end
-local api=_G.AnimationAPI
-
-for i,g in pairs(Enum.HumanoidStateType:GetEnumItems()) do
-	if g.Name~='Dead' then
-		local c repeat c=game.Players:children()[1] if c then c=c.Character end wait() until c
-		api.SetPremadeState{State=g,Character=c}
-		print(g)
-		wait(4)
-	end
-end]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-			<Item class="Script" referent="RBX0C93B0BA23F444C59E40D180C27B75E9">
-				<Properties>
-					<bool name="Disabled">true</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">RevolvingRIgs</string>
-					<string name="ScriptGuid">{78357FA0-42E3-4362-8A93-95C7E89C7389}</string>
-					<ProtectedString name="Source"><![CDATA[local function p()
-	while #game.Players:children()<1 do wait() end
-	return game.Players:children()[1].Character.PrimaryPart.Position
-end
-
-while not _G.AnimationAPI do wait() end
-local api=_G.AnimationAPI
-
-local ids={
-	1630228,
-	968839,
-	20566913,
-}
-local count=40
-local layers=3
-
-local anims={
-	30196114,
-	337214386,
-	337440294,
-	337218119,
-	337406528,
-}
-
-for i=1,count do
-	local c=api.GetCharacterClass(api.GenerateCharacter{
-		CFrame=CFrame.new(p()),UserID=ids[(i-1)%#ids+1],
-		Rig='R6',Parent=game.Workspace,
-	})
-	--c.SetState(Enum.HumanoidStateType.Flying)
-	--c.BodyTypeScale.Value=1
-	local d=(2*math.pi*i/count*layers)
-	local l=math.ceil(i/count*layers)-1
-	api.SetCharacterAnimation{
-		AnimID=anims[(i-1)%#anims+1],
-		Character=c.Character,		
-		AnimParams={Looped=true,Speed=-1},
-	}
-	spawn(function()
-		while wait() do
-			local t=tick()*((l%2)*2-1)/5
-			local t1=3*l+7--+5*math.sin(tick()*math.pi/6)
-			c.WalkToPoint=p()+Vector3.new(t1*math.cos(t+d),0,t1*math.sin(t+d))
-		end
-	end)
-end]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-			<Item class="Script" referent="RBXA4F3D20FF1934022A38DC900B92655B4">
-				<Properties>
-					<bool name="Disabled">true</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">SpinningCamera</string>
-					<string name="ScriptGuid">{550606AE-5302-4093-A18C-435E63230295}</string>
-					<ProtectedString name="Source"><![CDATA[while not _G.AnimationAPI do wait() end
-local api=_G.AnimationAPI
-local cc=game.workspace.CurrentCamera
-
-local ch repeat
-	ch=game.Players:children()[1]
-	if ch then ch=ch.Character end
-	wait()
-until ch
-
-local c=0 while true do
-	local r=math.sin(math.pi*c/13)*math.pi/3
-	local cf=ch.HumanoidRootPart.CFrame
-		*CFrame.Angles(0,r,0)*CFrame.new(0,1,10)
-	local fo=ch.HumanoidRootPart.CFrame
-	game.Workspace.CurrentCamera.CameraType='Fixed'
-	
-	local t=c>0 and .25 or 0
-	api.Tween{Object=cc,ToValue=cf,Property='CFrame',Time=t}
-	api.Tween{Object=cc,ToValue=fo,Property='Focus',Time=t}
-	wait(t)
-	c=c+1
-end]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-			<Item class="Script" referent="RBXF491DA5E902348D083FADD7179626CC4">
-				<Properties>
-					<bool name="Disabled">false</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">SceneTest1</string>
-					<string name="ScriptGuid">{02BE5D47-73ED-449D-B525-3A84DBF68A1E}</string>
-					<ProtectedString name="Source"><![CDATA[--Preloads the appearance up from outside the API.
-local a=game.Players:GetCharacterAppearanceAsync(1630228)
-
-while not _G.AnimationAPI do wait() end
-local api=_G.AnimationAPI
-
-local z=17
-api.MoveCamera{CFrame=CFrame.new(7,5,0),Focus=CFrame.new(0,5,0)}
-local char=api.GenerateCharacter{CFrame=CFrame.new(0,20,z),Appearance=a,Rig='R15'}
-wait(1)
-
-while true do
-	z=z*-1
-	char.Humanoid.WalkToPoint=Vector3.new(0,0,z)
-	wait(4)
-end]]></ProtectedString>
-					<BinaryString name="Tags"></BinaryString>
-				</Properties>
-			</Item>
-		</Item>
-		<Item class="SpawnLocation" referent="RBX572F3A8A8A594EA7BA102CD7CD2F9305">
-			<Properties>
-				<bool name="AllowTeamChangeOnTouch">false</bool>
-				<bool name="Anchored">true</bool>
-				<float name="BackParamA">-0.5</float>
-				<float name="BackParamB">0.5</float>
-				<token name="BackSurface">0</token>
-				<token name="BackSurfaceInput">0</token>
-				<float name="BottomParamA">-0.5</float>
-				<float name="BottomParamB">0.5</float>
-				<token name="BottomSurface">0</token>
-				<token name="BottomSurfaceInput">0</token>
-				<CoordinateFrame name="CFrame">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>0</R02>
-					<R10>0</R10>
-					<R11>1</R11>
-					<R12>0</R12>
-					<R20>0</R20>
-					<R21>0</R21>
-					<R22>1</R22>
-				</CoordinateFrame>
-				<bool name="CanCollide">true</bool>
-				<int name="CollisionGroupId">0</int>
-				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
-				<PhysicalProperties name="CustomPhysicalProperties">
-					<CustomPhysics>false</CustomPhysics>
-				</PhysicalProperties>
-				<int name="Duration">10</int>
-				<bool name="Enabled">true</bool>
-				<float name="FrontParamA">-0.5</float>
-				<float name="FrontParamB">0.5</float>
-				<token name="FrontSurface">0</token>
-				<token name="FrontSurfaceInput">0</token>
-				<float name="LeftParamA">-0.5</float>
-				<float name="LeftParamB">0.5</float>
-				<token name="LeftSurface">0</token>
-				<token name="LeftSurfaceInput">0</token>
-				<bool name="Locked">false</bool>
-				<bool name="Massless">false</bool>
-				<token name="Material">256</token>
-				<string name="Name">SpawnLocation</string>
-				<bool name="Neutral">true</bool>
-				<float name="Reflectance">0</float>
-				<float name="RightParamA">-0.5</float>
-				<float name="RightParamB">0.5</float>
-				<token name="RightSurface">0</token>
-				<token name="RightSurfaceInput">0</token>
-				<int name="RootPriority">0</int>
-				<Vector3 name="RotVelocity">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<BinaryString name="Tags"></BinaryString>
-				<int name="TeamColor">194</int>
-				<float name="TopParamA">-0.5</float>
-				<float name="TopParamB">0.5</float>
-				<token name="TopSurface">0</token>
-				<token name="TopSurfaceInput">0</token>
-				<float name="Transparency">1</float>
-				<Vector3 name="Velocity">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<token name="formFactorRaw">1</token>
-				<token name="shape">1</token>
-				<Vector3 name="size">
-					<X>0.0500000007</X>
-					<Y>0.0500000007</Y>
-					<Z>0.0500000007</Z>
-				</Vector3>
-			</Properties>
 		</Item>
 	</Item>
 	<Item class="SoundService" referent="RBX31BE0A63C35C44E292604C4D05AB9AB4">
