@@ -39,26 +39,26 @@
 		<Item class="Camera" referent="RBXAC26DCA67A954AEAA864537E3A963B11">
 			<Properties>
 				<CoordinateFrame name="CFrame">
-					<X>-10.2937841</X>
-					<Y>8.34538078</Y>
-					<Z>16.2908993</Z>
-					<R00>0.845376551</R00>
-					<R01>0.212278798</R01>
-					<R02>-0.490179747</R02>
-					<R10>1.49011612e-08</R10>
-					<R11>0.91764605</R11>
-					<R12>0.39739871</R12>
-					<R20>0.534170866</R20>
-					<R21>-0.335951537</R21>
-					<R22>0.775756419</R22>
+					<X>-53.4215469</X>
+					<Y>69.6057816</Y>
+					<Z>29.5446053</Z>
+					<R00>0.774080396</R00>
+					<R01>0.158218026</R01>
+					<R02>-0.612998068</R02>
+					<R10>7.4505806e-09</R10>
+					<R11>0.968267798</R11>
+					<R12>0.249915004</R12>
+					<R20>0.633087337</R20>
+					<R21>-0.19345431</R21>
+					<R22>0.749517083</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
-				<token name="CameraType">0</token>
+				<token name="CameraType">6</token>
 				<float name="FieldOfView">70</float>
 				<CoordinateFrame name="Focus">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
+					<X>-41.1615868</X>
+					<Y>64.6074829</Y>
+					<Z>14.5542641</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -143,7 +143,11 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 					<Y>0</Y>
 					<Z>0</Z>
 				</Vector3>
-				<Color3 name="WaterColor">4278998108</Color3>
+				<Color3 name="WaterColor">
+					<R>0.0470588282</R>
+					<G>0.329411775</G>
+					<B>0.360784322</B>
+				</Color3>
 				<float name="WaterReflectance">1</float>
 				<float name="WaterTransparency">0.300000012</float>
 				<float name="WaterWaveSize">0.150000006</float>
@@ -180,6 +184,23 @@ function getChar(obj)
 		--Metatable property that identifies it's a metaobject!
 		local qush=getmetatable(obj).chiqish=='charMetaclass'
 		if qush then return obj.Character end
+	end
+end
+
+--Base values for structs for efficiency...
+local baseCF=CFrame.new()
+
+--Implicit casting.
+function cast(ob,to)
+	local obT=typeof(ob)
+	local toT=typeof(to)
+	if obT==toT then
+		return ob
+	elseif obT=='CFrame' and toT=='Vector3' then
+		return ob.p
+	elseif obT=='Vector3' and toT=='CFrame' then
+		return CFrame.new(ob)
+	else return nil
 	end
 end
 
@@ -349,10 +370,10 @@ api={
 		local rigS=options.Rig
 		
 		--CFrame?
-		local cf=options.CFrame or CFrame.new()
+		local cf=options.CFrame or baseCF
 		
 		--instance
-		local par=options.Parent
+		local par=options.Parent or game.Workspace
 		
 		do local e
 			if not id and not app then e=true
@@ -370,7 +391,10 @@ api={
 			if rigS~='R15'and rigS~='R6'then e=true
 				error('\'Rig\' must be either \'R6\' or \'R15\'.',2)
 			end
-			if typeof(cf)~='CFrame' then e=true
+			
+			--Checks if a cast is vaid.
+			cf=cast(cf,baseCF)
+			if not cast then e=true
 				error('\'CFrame\' is not valid.',2)
 			end
 			if par and typeof(par)~='Instance' then e=true
@@ -382,11 +406,12 @@ api={
 		end
 		
 		local char=script[rigS]:clone()
-		char:SetPrimaryPartCFrame(cf)
 		options.Character=char
+		char.Animate.Disabled=false
 		char.Parent=par
 		api.DressUpRig(options)
-		char.Animate.Disabled=false
+		char:SetPrimaryPartCFrame(cf)
+		char:MoveTo(cf.p)
 		
 		for i,o in pairs(char:GetDescendants()) do
 			if o:isA'BasePart' then
@@ -450,7 +475,7 @@ api={
 		end
 		
 		return setmetatable(
-				{
+			{
 				SetState=setSt8,
 				SetPremadeState=setSt8,
 				Humanoid=char.Humanoid,
@@ -475,6 +500,10 @@ api={
 		)
 	end,
 	
+	--Toggles whether the players are shown.
+	TogglePlayer=function(show)
+	end,
+	
 	--Wrapped in order to properly handle errors in the next scope down.
 	GetTweenInfo=function(...)return util.GetTweenInfo(...)end,
 	ExtractTweenInfo=function(...)return util.ExtractTweenInfo(...)end,
@@ -488,7 +517,7 @@ api={
 		--Template type (defined as T)
 		local tv=options.ToValue
 		
-		--String where typeof(ob[pr]) == typeof(tv)
+		--String, where typeof(ob[pr]) == typeof(tv)
 		local pr=options.Property
 		
 		--TweenInfo
@@ -503,8 +532,12 @@ api={
 			
 			if not tv then e=true
 				error('\'ToValue\' has not been declared.',2)
-			elseif typeof(ob[pr])~=typeof(tv)then e=true
-				error('\'ToValue\' is incompatible with the property type.',2)
+			
+			--Implicit clss casting.
+			elseif typeof(ob[pr])~=typeof(tv)then
+				tv=cast(tv,ob[pr])
+				--You can't tween something to nil.
+				if not tv then e=true end
 			end
 			
 			--Returns with nothing since it already errored internally.
@@ -527,6 +560,43 @@ api={
 		--Returns the TweenObject for advanced editing.
 		return util.DoTween(ob,ti,{[pr]=tv})
 	end,
+	
+	--Moves the current camera through EVENTING!
+	MoveCamera=function(options)
+		
+		--CFrame
+		local cf=options.CFrame
+		
+		--CFrame
+		local fo=options.Focus
+		
+		do local e
+			if not cf then e=true
+				error('\'CFrame\' is not defined.',2)
+			end
+			
+			--Casting error check.
+			cf=cast(cf,baseCF)
+			if not cf then e=true
+				error('\'CFrame\' is not a valid value.',2)
+			
+			--Automatically projects the focus.
+			elseif not fo then
+				fo=cf*CFrame.new(0,0,1)
+			end
+			
+			--Another casting error check.
+			fo=cast(fo,baseCF)
+			if not fo then e=true
+				error('\'Focus\' is not a valid value.',2)
+			end
+			
+			if e then
+			return end
+		end
+		
+		fireClients('MC',cf,fo)
+	end
 }
 
 --[[
@@ -541,6 +611,9 @@ api={
 		return error(errorS)
 	end
 --]]
+
+--A pretty good threshold to go to.
+wait(math.pi)
 
 _G.AnimationAPI=api]]></ProtectedString>
 				<BinaryString name="Tags"></BinaryString>
@@ -3500,7 +3573,11 @@ return applyBodyPart]]></ProtectedString>
 					</Item>
 					<Item class="Decal" referent="RBX3D61AA371E57455A84E786201078BB82">
 						<Properties>
-							<Color3 name="Color3">4294967295</Color3>
+							<Color3 name="Color3">
+								<R>1</R>
+								<G>1</G>
+								<B>1</B>
+							</Color3>
 							<token name="Face">5</token>
 							<string name="Name">face</string>
 							<BinaryString name="Tags"></BinaryString>
@@ -5350,7 +5427,11 @@ end]]></ProtectedString>
 					</Properties>
 					<Item class="Decal" referent="RBXB88CA9BEDB6E4A00ADDCB5B9906FE2AA">
 						<Properties>
-							<Color3 name="Color3">4294967295</Color3>
+							<Color3 name="Color3">
+								<R>1</R>
+								<G>1</G>
+								<B>1</B>
+							</Color3>
 							<token name="Face">5</token>
 							<string name="Name">Face</string>
 							<BinaryString name="Tags"></BinaryString>
@@ -6303,6 +6384,20 @@ function c(name,...)
 		
 		--Exxxecute the plan.
 		util.DoTween(cc,ti,{[pr]=tv})
+		
+	--MoveCamera is here.
+	elseif name=='MC' then
+		local cc=game.Workspace.CurrentCamera
+		
+		--Ensures the camera tween works well and all.
+		if cc.CameraType~=Enum.CameraType.Scriptable then
+			cc.CameraType='Scriptable'warn'CameraType set to \'Scriptable\''
+		end
+		
+		--Exxxecute.
+		local cf,fo=...
+		cf=CFrame.new(cf.p,fo.p)
+		cc.CFrame,cc.Focus=cf,fo
 	end
 end
 
@@ -6436,7 +6531,7 @@ local function doTween(part,tI,props)
 end
 
 return{
-	ApplyPlackage=require(script.Parent.ApplyPackage),
+	ApplyPackage=require(script.Parent.ApplyPackage),
 	GetEnumValue=GetEnumValue,
 	GetTweenInfo=getTweenInfo,
 	ExtractTweenInfo=extractTweenInfo,
@@ -6602,7 +6697,7 @@ end]]></ProtectedString>
 			</Item>
 			<Item class="Script" referent="RBXA4F3D20FF1934022A38DC900B92655B4">
 				<Properties>
-					<bool name="Disabled">false</bool>
+					<bool name="Disabled">true</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">SpinningCamera</string>
 					<string name="ScriptGuid">{550606AE-5302-4093-A18C-435E63230295}</string>
@@ -6628,6 +6723,31 @@ local c=0 while true do
 	api.Tween{Object=cc,ToValue=fo,Property='Focus',Time=t}
 	wait(t)
 	c=c+1
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBXF491DA5E902348D083FADD7179626CC4">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">SceneTest1</string>
+					<string name="ScriptGuid">{02BE5D47-73ED-449D-B525-3A84DBF68A1E}</string>
+					<ProtectedString name="Source"><![CDATA[--Preloads the appearance up from outside the API.
+local a=game.Players:GetCharacterAppearanceAsync(1630228)
+
+while not _G.AnimationAPI do wait() end
+local api=_G.AnimationAPI
+
+local z=17
+api.MoveCamera{CFrame=CFrame.new(7,5,0),Focus=CFrame.new(0,5,0)}
+local char=api.GenerateCharacter{CFrame=CFrame.new(0,20,z),Appearance=a,Rig='R15'}
+wait(1)
+
+while true do
+	z=z*-1
+	char.Humanoid.WalkToPoint=Vector3.new(0,0,z)
+	wait(4)
 end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
@@ -6938,18 +7058,38 @@ end]]></ProtectedString>
 	</Item>
 	<Item class="Lighting" referent="RBX34DB6F7F4FA94C84A24EE90E194F3317">
 		<Properties>
-			<Color3 name="Ambient">4286545791</Color3>
+			<Color3 name="Ambient">
+				<R>0.498039246</R>
+				<G>0.498039246</G>
+				<B>0.498039246</B>
+			</Color3>
 			<float name="Brightness">1</float>
-			<Color3 name="ColorShift_Bottom">4278221015</Color3>
-			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<Color3 name="ColorShift_Bottom">
+				<R>0</R>
+				<G>0.470588267</G>
+				<B>0.843137324</B>
+			</Color3>
+			<Color3 name="ColorShift_Top">
+				<R>0</R>
+				<G>0</G>
+				<B>0</B>
+			</Color3>
 			<float name="ExposureCompensation">0</float>
-			<Color3 name="FogColor">4290822336</Color3>
+			<Color3 name="FogColor">
+				<R>0.752941251</R>
+				<G>0.752941251</G>
+				<B>0.752941251</B>
+			</Color3>
 			<float name="FogEnd">100000</float>
 			<float name="FogStart">0</float>
 			<float name="GeographicLatitude">41.7332993</float>
 			<bool name="GlobalShadows">false</bool>
 			<string name="Name">Lighting</string>
-			<Color3 name="OutdoorAmbient">4286545791</Color3>
+			<Color3 name="OutdoorAmbient">
+				<R>0.498039246</R>
+				<G>0.498039246</G>
+				<B>0.498039246</B>
+			</Color3>
 			<bool name="Outlines">false</bool>
 			<BinaryString name="Tags"></BinaryString>
 			<token name="Technology">0</token>
