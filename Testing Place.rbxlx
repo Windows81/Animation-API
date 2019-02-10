@@ -352,7 +352,7 @@ end]]></ProtectedString>
 					<string name="Name">SceneTest1</string>
 					<string name="ScriptGuid">{02BE5D47-73ED-449D-B525-3A84DBF68A1E}</string>
 					<ProtectedString name="Source"><![CDATA[--Preloads the appearance up from outside the API.
-local a=game.Players:GetCharacterAppearanceAsync(1630228)
+local a=game.Players:GetCharacterAppearanceAsync(968839)
 
 while not _G.AnimationAPI do wait() end
 local api=_G.AnimationAPI
@@ -360,7 +360,7 @@ local api=_G.AnimationAPI
 local z=17
 api.MoveCamera{CFrame=CFrame.new(7,5,0),Focus=CFrame.new(0,5,0)}
 local char=api.GenerateCharacter{CFrame=CFrame.new(0,20,z),Appearance=a,Rig='R15'}
-wait(1)
+api.ToggleGui
 
 while true do
 	z=z*-1
@@ -678,7 +678,7 @@ api={
 		--CFrame?
 		local cf=options.CFrame or baseCF
 		
-		--instance
+		--Instance
 		local par=options.Parent or game.Workspace
 		
 		do local e
@@ -813,9 +813,52 @@ api={
 		--String ('all', 'others', or 'self')
 		local m=options.Mode
 		
+		--Boolean
+		local s=options.Show
+		
+		--Variable must be initialised before error-handling.
+		local mS=m and(typeof(m)=='string'and m:lower()or'')or'all'
+		
 		do local e
+			if mS~='all'and mS~='others'and mS~='self'then e=true
+				error('\'Mode\' should be either \'all\', \'others\', or \'self\'.',2)
+			elseif typeof(s)~='boolean' then
+				error('\'Show\' isn\'t a valid boolean.',2)
+			end
 			
+			if e then
+			return end
 		end
+	end,
+	
+	ToggleGui=function(options)
+		
+		--String ('all', 'core', 'user')
+		local m=options.Mode
+		
+		--Boolean
+		local s=options.Show
+		
+		--Variable must be initialised before error-handling.
+		local mS=m and(typeof(m)=='string'and m:lower()or'')or'all'
+		
+		do local e
+			if mS~='all'and mS~='core'and mS~='user'then e=true
+				error('\'Mode\' should be either \'all\', \'core\', or \'user\'.',2)
+			elseif typeof(s)~='boolean' then
+				error('\'Show\' isn\'t a valid boolean.',2)
+			end
+			
+			if e then
+			return end
+		end
+		
+		--Not-so-convoluted logic.
+		local core,user=true,true
+		if mS=='user' then core=false
+		elseif mS=='core' then user=false end
+		
+		fireClients('TGui',s,core,user)
 	end,
 	
 	--Wrapped in order to properly handle errors in the next scope down.
@@ -999,6 +1042,10 @@ function c(name,...)
 		local cf,fo=...
 		cf=CFrame.new(cf.p,fo.p)
 		cc.CFrame,cc.Focus=cf,fo
+		
+	--ToggleGui.
+	elseif name=='TGui' then
+		require(main.ToggleGui)(...)
 	end
 end
 
@@ -1018,7 +1065,7 @@ else evt.OnClientEvent:Connect(c) end]]></ProtectedString>
 			<Item class="ModuleScript" referent="RBX98AF2263B7F44569B3179A56FBD44F3B">
 				<Properties>
 					<Content name="LinkedSource"><null></null></Content>
-					<string name="Name">ApplyBodyPart</string>
+					<string name="Name">PackageUtil</string>
 					<string name="ScriptGuid">{EA314A9A-15A0-4E89-BBF4-C21045877DA8}</string>
 					<ProtectedString name="Source"><![CDATA[--Originally designed by the character development team for R15, but reformatted to the tune of Respected Leader uid:1630228.
 
@@ -6879,6 +6926,78 @@ end
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
+			</Item>
+			<Item class="ModuleScript" referent="RBXBE290D2704BB4754B88A6F4E3200F19E">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">ToggleGui</string>
+					<string name="ScriptGuid">{522E6591-127B-483B-BDD8-ECD070BC874B}</string>
+					<ProtectedString name="Source"><![CDATA[local sg=game.StarterGui
+local cache={}
+
+local function iterate(g)
+	if g:isA'ScreenGui' then
+		if not on then cache[g]=g.Enabled end
+		g.Enabled=GuiOn(g)
+	end
+end
+
+return function(show,core,user)
+	local lp=game.Players.LocalPlayer
+	local mouse=lp:GetMouse()
+	
+	if not on then
+		cache['PointsNotificationsActive']=sg:GetCore'PointsNotificationsActive'
+		cache['BadgesNotificationsActive']=sg:GetCore'BadgesNotificationsActive'
+		cache['TopbarEnabled']=sg:GetCore'TopbarEnabled'
+		cache['Health']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Health)
+		cache['Backpack']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Backpack)
+		cache['PlayerList']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.PlayerList)
+		cache['Chat']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Chat)
+		cache['ShowMouse']=game:service'UserInputService'.MouseIconEnabled
+	end
+
+	local function GuiOn(name)
+		if not on then
+			return false
+		end
+		if cache[name] then
+			return cache[name]
+		end
+		return true
+	end
+	
+	if user then for i,g in pairs(lp.PlayerGui:children()) do iterate(g)end end
+	if core then for i,g in pairs(game.CoreGui:children()) do iterate(g)end end
+	
+	for i,g in pairs(lp.Character:GetDescendants()) do
+		if g:isA'BillboardGui' then
+			if not on then cache[g]=g.Enabled end
+			g.Enabled=GuiOn(g)
+		end
+	end
+	
+	game:service'UserInputService'.MouseIconEnabled=GuiOn'ShowMouse'
+	sg:SetCore('PointsNotificationsActive',GuiOn'PointsNotificationsActive')
+	sg:SetCore('BadgesNotificationsActive',GuiOn'BadgesNotificationsActive')
+	sg:SetCore('TopbarEnabled',GuiOn'TopbarEnabled')
+	sg:SetCoreGuiEnabled(Enum.CoreGuiType.Health,GuiOn'Health')
+	sg:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack,GuiOn'Backpack')
+	sg:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList,GuiOn'PlayerList')
+	sg:SetCoreGuiEnabled(Enum.CoreGuiType.Chat,GuiOn'Chat')
+end
+
+if cache then
+	ToggleGui(true)
+	cache=nil
+	print'GUI now hidden.'
+else
+	cache={}
+	ToggleGui(false)
+	print'GUI now shown.'
+end]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
 			</Item>
 		</Item>
 	</Item>
