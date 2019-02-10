@@ -366,8 +366,8 @@ api={
 		--Appearance
 		local app=options.Appearance
 		
-		--String (R6 / R15)
-		local rigS=options.Rig
+		--HumanoidRigType
+		local rigS=util.GetEnumValue(options.Rig,Enum.HumanoidRigType)
 		
 		--CFrame?
 		local cf=options.CFrame or baseCF
@@ -388,8 +388,9 @@ api={
 					app=api.GetAppearance(options)
 				end
 			end
-			if rigS~='R15'and rigS~='R6'then e=true
-				error('\'Rig\' must be either \'R6\' or \'R15\'.',2)
+			
+			if not rigS then e=true
+				error('\'Rig\' is not a valid HumanoidRigType.',2)
 			end
 			
 			--Checks if a cast is vaid.
@@ -501,7 +502,12 @@ api={
 	end,
 	
 	--Toggles whether the players are shown.
-	TogglePlayer=function(show)
+	TogglePlayers=function(options)
+		
+		--String ('all', 'others', or 'self')
+		local m=options.Mode
+		
+		do local e
 	end,
 	
 	--Wrapped in order to properly handle errors in the next scope down.
