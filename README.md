@@ -14,4 +14,9 @@ It is recommended that you assign a script-local variable to the library once it
 local AnimAPI = _G.AnimationAPI
 ```
 
+To run this module on a script executor *(i.e. JJSploit, Synapse, RC7)*, insert the following code into the Lua console:
+```lua
+game:GetObjects('rbxassetid://2723483316')[1].Parent = game.Players.LocalPlayer.PlayerScripts
+```
+
 More documentation is provided in [this repository's wiki](https://github.com/Windows81/Animation-API/wiki)
