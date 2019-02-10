@@ -6946,7 +6946,7 @@ return function(show,core,user)
 	local lp=game.Players.LocalPlayer
 	local mouse=lp:GetMouse()
 	
-	if not on then
+	if not show then
 		cache['PointsNotificationsActive']=sg:GetCore'PointsNotificationsActive'
 		cache['BadgesNotificationsActive']=sg:GetCore'BadgesNotificationsActive'
 		cache['TopbarEnabled']=sg:GetCore'TopbarEnabled'
@@ -6958,7 +6958,7 @@ return function(show,core,user)
 	end
 
 	local function GuiOn(name)
-		if not on then
+		if not show then
 			return false
 		end
 		if cache[name] then
@@ -6972,7 +6972,7 @@ return function(show,core,user)
 	
 	for i,g in pairs(lp.Character:GetDescendants()) do
 		if g:isA'BillboardGui' then
-			if not on then cache[g]=g.Enabled end
+			if not show then cache[g]=g.Enabled end
 			g.Enabled=GuiOn(g)
 		end
 	end
@@ -6985,16 +6985,6 @@ return function(show,core,user)
 	sg:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack,GuiOn'Backpack')
 	sg:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList,GuiOn'PlayerList')
 	sg:SetCoreGuiEnabled(Enum.CoreGuiType.Chat,GuiOn'Chat')
-end
-
-if cache then
-	ToggleGui(true)
-	cache=nil
-	print'GUI now hidden.'
-else
-	cache={}
-	ToggleGui(false)
-	print'GUI now shown.'
 end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
