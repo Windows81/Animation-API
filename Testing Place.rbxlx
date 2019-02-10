@@ -360,7 +360,7 @@ local api=_G.AnimationAPI
 local z=17
 api.MoveCamera{CFrame=CFrame.new(7,5,0),Focus=CFrame.new(0,5,0)}
 local char=api.GenerateCharacter{CFrame=CFrame.new(0,20,z),Appearance=a,Rig='R15'}
-api.ToggleGui
+api.ToggleGui{Show=false}
 
 while true do
 	z=z*-1
@@ -6934,29 +6934,31 @@ end
 					<string name="ScriptGuid">{522E6591-127B-483B-BDD8-ECD070BC874B}</string>
 					<ProtectedString name="Source"><![CDATA[local sg=game.StarterGui
 local cache={}
-
-local function iterate(g)
-	if g:isA'ScreenGui' then
-		if not on then cache[g]=g.Enabled end
-		g.Enabled=GuiOn(g)
-	end
-end
-
 return function(show,core,user)
 	local lp=game.Players.LocalPlayer
 	local mouse=lp:GetMouse()
+	local deep=core
 	
 	if not show then
-		cache['PointsNotificationsActive']=sg:GetCore'PointsNotificationsActive'
-		cache['BadgesNotificationsActive']=sg:GetCore'BadgesNotificationsActive'
-		cache['TopbarEnabled']=sg:GetCore'TopbarEnabled'
-		cache['Health']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Health)
-		cache['Backpack']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Backpack)
-		cache['PlayerList']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.PlayerList)
-		cache['Chat']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Chat)
-		cache['ShowMouse']=game:service'UserInputService'.MouseIconEnabled
+		cache={}
+		if deep then
+			xpcall(function()
+				cache['PointsNotificationsActive']=sg:GetCore'PointsNotificationsActive'
+				cache['BadgesNotificationsActive']=sg:GetCore'BadgesNotificationsActive'
+				cache['TopbarEnabled']=sg:GetCore'TopbarEnabled'
+				cache['Health']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Health)
+				cache['Backpack']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Backpack)
+				cache['PlayerList']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.PlayerList)
+				cache['Chat']=sg:GetCoreGuiEnabled(Enum.CoreGuiType.Chat)
+				cache['ShowMouse']=game:service'UserInputService'.MouseIconEnabled
+			end,function(e)
+				deep=false
+				cache={}
+				warn'Unable to access certain core GUI options.  You could try using Animation API as a plugin or on a script executor though.'
+			end)
+		end
 	end
-
+	
 	local function GuiOn(name)
 		if not show then
 			return false
@@ -6967,8 +6969,15 @@ return function(show,core,user)
 		return true
 	end
 	
+	local function iterate(g)
+		if g:isA'ScreenGui' then
+			if not show then cache[g]=g.Enabled end
+			g.Enabled=GuiOn(g)
+		end
+	end
+	
 	if user then for i,g in pairs(lp.PlayerGui:children()) do iterate(g)end end
-	if core then for i,g in pairs(game.CoreGui:children()) do iterate(g)end end
+	if deep then for i,g in pairs(game.CoreGui:children()) do iterate(g)end end
 	
 	for i,g in pairs(lp.Character:GetDescendants()) do
 		if g:isA'BillboardGui' then
