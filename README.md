@@ -16,7 +16,17 @@ local AnimAPI = _G.AnimationAPI
 
 To run this module on a script executor *(i.e. JJSploit, Synapse, RC7)*, insert the following code into the Lua console:
 ```lua
-game:GetObjects('rbxassetid://2723483316')[1].Parent = game.Players.LocalPlayer.PlayerScripts
+--Loads the published plugin object.
+scr=game:GetObjects('rbxassetid://2723483316')[1]
+
+--Replaces the require function, yet avoids overriding the executor's environment.
+function newReq(o)local s='r=function()\n'..o.Source..'\nend'loadstring(s)local re=r()return re end
+src=scr.Source:gsub('require%(','newReq('):gsub('script','scr')
+
+--Encapsulates the main module into a function.
+loadstring('f=function()\n'..src..'\nend')
+wait(1)
+f()
 ```
 
 More documentation is provided in [this repository's wiki](https://github.com/Windows81/Animation-API/wiki)
