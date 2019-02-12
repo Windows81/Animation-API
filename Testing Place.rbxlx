@@ -39,18 +39,18 @@
 		<Item class="Camera" referent="RBXAC26DCA67A954AEAA864537E3A963B11">
 			<Properties>
 				<CoordinateFrame name="CFrame">
-					<X>21.7032452</X>
-					<Y>32.4269257</Y>
-					<Z>-42.6596375</Z>
-					<R00>-0.858266473</R00>
-					<R01>-0.308664262</R01>
-					<R02>0.410006225</R02>
-					<R10>1.49011612e-08</R10>
-					<R11>0.798914254</R11>
-					<R12>0.601445138</R12>
-					<R20>-0.513204336</R20>
-					<R21>0.516200185</R21>
-					<R22>-0.685681283</R22>
+					<X>21.114418</X>
+					<Y>31.5394459</Y>
+					<Z>-39.3268776</Z>
+					<R00>0.993125141</R00>
+					<R01>-0.0184606221</R01>
+					<R02>0.115592927</R02>
+					<R10>-1.86264515e-09</R10>
+					<R11>0.987486243</R11>
+					<R12>0.157705262</R12>
+					<R20>-0.117057756</R20>
+					<R21>-0.156621054</R21>
+					<R22>0.980697393</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">5</token>
@@ -453,13 +453,13 @@ end]]></ProtectedString>
 		<Item class="ModuleScript" referent="RBX815F2A3D964640A69052594905D3FA28">
 			<Properties>
 				<Content name="LinkedSource"><null></null></Content>
-				<string name="Name">AnimationAPI</string>
+				<string name="Name">MainModule</string>
 				<string name="ScriptGuid">{C5FC5985-3EEF-4838-B927-F9BDC1F501B6}</string>
 				<ProtectedString name="Source"><![CDATA[--// 1630228 • 1: 2018-05-28/2018-06? • 2: 2019-01-06/2019-02-07 • +1 714 463 5142 //--
 local api
 
 --Pulls up the utility functions.
-local util=require(script.Util)
+util=require(script.Util)
 
 --Gets the character from that annoying metaobject (or itself).
 function getChar(obj)
@@ -499,9 +499,17 @@ local fireClients
 local lcl=script.AnimLocal
 local isCl=game['Run Service']:IsClient()
 
-if isCl then
+--Some sloppy workaround for JJSploit support.
+if 'script'=='sc' then connect=nil
+	loadstring(script.AnimLocal.Source:match'%-%-{B}%-%-(.+)%-%-{F}%-%-')
+	fireClients=connect
+	
+elseif isCl then
 	local evt=script.BindableEvent
 	lcl.Event.Value=evt
+	
+	--Only run once the script could locate the event.
+	lcl.Disabled=false
 	
 	--A boring wrapper method.
 	function fireClients(...)evt:Fire(...)end
@@ -515,7 +523,9 @@ else
 	--Insert a copy of 'AnimLocal' where not found.
 	function insertLcl(par)
 		if not par:findFirstChild'AnimLocal' then
-			lcl:clone().Parent=par
+			local cl=lcl:clone()
+			cl.Parent=par
+			cl.Disabled=false
 		end
 	end
 	
@@ -988,14 +998,14 @@ return api]]></ProtectedString>
 			</Item>
 			<Item class="LocalScript" referent="RBXE105279A23B54CDE9C8B31E794CD51EA">
 				<Properties>
-					<bool name="Disabled">false</bool>
+					<bool name="Disabled">true</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">AnimLocal</string>
 					<string name="ScriptGuid">{92C4FD5C-2DA8-4D73-BE60-F3BB83FC0467}</string>
-					<ProtectedString name="Source"><![CDATA[--Initialises the mainoest variables.
+					<ProtectedString name="Source"><![CDATA[--Initialises the mainiest variables.
 local evt=script.Event.Value
-local main=evt.Parent
-local util=require(main.Util)
+local sc=evt.Parent
+local util=require(sc.Util)
 
 --It's all the developers' fault this has to be.
 local humanoidSt8s={}
@@ -1005,8 +1015,10 @@ for i,st in pairs(Enum.HumanoidStateType:GetEnumItems()) do
 	end
 end
 
+--Begin exploit support region. --{B}--
+
 --The intro to the client's dabble.
-function c(name,...)
+function connect(name,...)
 	if name=='SPMS' then
 		local char,state=...
 		for i,e in pairs(humanoidSt8s) do
@@ -1045,13 +1057,16 @@ function c(name,...)
 		
 	--ToggleGui.
 	elseif name=='TGui' then
-		require(main.ToggleGui)(...)
+		require(sc.ToggleGui)(...)
 	end
 end
 
+--{F}-- Finish exploit support region.
+
 --Connects the events over.
-if evt:isA'BindableEvent' then evt.Event:Connect(c)
-else evt.OnClientEvent:Connect(c) end]]></ProtectedString>
+if evt:isA'BindableEvent' then evt.Event:Connect(connect)
+else evt.OnClientEvent:Connect(connect) end
+return c]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 				<Item class="ObjectValue" referent="RBXBF10D3B3E3244B468DCA7EB1874BF1E6">
