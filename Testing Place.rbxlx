@@ -1,12 +1,12 @@
 <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Workspace" referent="RBX038E3D2E04004165B270882B9C311EF0">
+	<Item class="Workspace" referent="RBXFFA38BEFFA02459AAAB9F272F2F3AC29">
 		<Properties>
 			<bool name="AllowThirdPartySales">false</bool>
 			<token name="AutoJointsMode">0</token>
 			<string name="CollisionGroups">Default^0^1</string>
-			<Ref name="CurrentCamera">RBXAC26DCA67A954AEAA864537E3A963B11</Ref>
+			<Ref name="CurrentCamera">RBX91814D6770454D22A3A2BD10249699EF</Ref>
 			<double name="DistributedGameTime">0</double>
 			<bool name="ExplicitAutoJoints">true</bool>
 			<float name="FallenPartsDestroyHeight">-500</float>
@@ -36,21 +36,21 @@
 			<bool name="TemporaryLegacyPhysicsSolverOverrideStreaming">false</bool>
 			<bool name="TerrainWeldsFixed">true</bool>
 		</Properties>
-		<Item class="Camera" referent="RBXAC26DCA67A954AEAA864537E3A963B11">
+		<Item class="Camera" referent="RBX91814D6770454D22A3A2BD10249699EF">
 			<Properties>
 				<CoordinateFrame name="CFrame">
-					<X>21.114418</X>
-					<Y>31.5394459</Y>
-					<Z>-39.3268776</Z>
-					<R00>0.993125141</R00>
-					<R01>-0.0184606221</R01>
-					<R02>0.115592927</R02>
-					<R10>-1.86264515e-09</R10>
-					<R11>0.987486243</R11>
-					<R12>0.157705262</R12>
-					<R20>-0.117057756</R20>
-					<R21>-0.156621054</R21>
-					<R22>0.980697393</R22>
+					<X>22.5653992</X>
+					<Y>31.0696812</Y>
+					<Z>-40.2175331</Z>
+					<R00>0.536971807</R00>
+					<R01>0.0651066154</R01>
+					<R02>0.841084123</R02>
+					<R10>-0</R10>
+					<R11>0.997017384</R11>
+					<R12>-0.0771770999</R12>
+					<R20>-0.843600154</R20>
+					<R21>0.0414419286</R21>
+					<R22>0.535370231</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">5</token>
@@ -75,7 +75,7 @@
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="Terrain" referent="RBX973B1F367AD24AE88908D73F4988BCA0">
+		<Item class="Terrain" referent="RBX823CD2CEB2EF4128849BBAFC0C489214">
 			<Properties>
 				<bool name="Anchored">true</bool>
 				<float name="BackParamA">-0.5</float>
@@ -159,7 +159,7 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="Part" referent="RBX3E47459A379B4ABE84F576332C7A7F41">
+		<Item class="Part" referent="RBX2C8ED84D13E145D0861520236CC35EDF">
 			<Properties>
 				<bool name="Anchored">true</bool>
 				<float name="BackParamA">-0.5</float>
@@ -233,12 +233,12 @@ gcLgc4RKxr21zq2UlJSM]]></BinaryString>
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="Folder" referent="RBX1DB1ACC2D8894E8A9A91C790C06D228C">
+		<Item class="Folder" referent="RBXF88D63452A31423689CF2AEDED297EB7">
 			<Properties>
 				<string name="Name">TestingScripts</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBX320B4DD3020E4AC4A314EAB49152D40B">
+			<Item class="Script" referent="RBXF00C035F5A4C49E594B6E6CCE6BF4660">
 				<Properties>
 					<bool name="Disabled">true</bool>
 					<Content name="LinkedSource"><null></null></Content>
@@ -258,7 +258,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="Script" referent="RBX0C93B0BA23F444C59E40D180C27B75E9">
+			<Item class="Script" referent="RBXC8CF6F7E5F134A5A9ED2B380B9D53DC7">
 				<Properties>
 					<bool name="Disabled">true</bool>
 					<Content name="LinkedSource"><null></null></Content>
@@ -313,7 +313,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="Script" referent="RBXA4F3D20FF1934022A38DC900B92655B4">
+			<Item class="Script" referent="RBX2F5421B00FB740DB8B7863ADE0848995">
 				<Properties>
 					<bool name="Disabled">true</bool>
 					<Content name="LinkedSource"><null></null></Content>
@@ -345,7 +345,7 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="Script" referent="RBXF491DA5E902348D083FADD7179626CC4">
+			<Item class="Script" referent="RBX5A53F66F81104C91B7EBA15ACBD10BCE">
 				<Properties>
 					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
@@ -358,9 +358,10 @@ while not _G.AnimationAPI do wait() end
 local api=_G.AnimationAPI
 
 local z=17
+api.HideCharacters'all'
 api.MoveCamera{CFrame=CFrame.new(7,5,0),Focus=CFrame.new(0,5,0)}
 local char=api.GenerateCharacter{CFrame=CFrame.new(0,20,z),Appearance=a,Rig='R15'}
-api.ToggleGui{Show=false}
+api.HideGui(false)
 
 while true do
 	z=z*-1
@@ -371,7 +372,7 @@ end]]></ProtectedString>
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="SpawnLocation" referent="RBX572F3A8A8A594EA7BA102CD7CD2F9305">
+		<Item class="SpawnLocation" referent="RBXDACCA29290884CE2AF2DBD41C54C0901">
 			<Properties>
 				<bool name="AllowTeamChangeOnTouch">false</bool>
 				<bool name="Anchored">true</bool>
@@ -450,7 +451,7 @@ end]]></ProtectedString>
 				</Vector3>
 			</Properties>
 		</Item>
-		<Item class="ModuleScript" referent="RBX815F2A3D964640A69052594905D3FA28">
+		<Item class="ModuleScript" referent="RBX1F52689296F34D45B4A4625E94F8B283">
 			<Properties>
 				<Content name="LinkedSource"><null></null></Content>
 				<string name="Name">MainModule</string>
@@ -501,15 +502,15 @@ local isCl=game['Run Service']:IsClient()
 
 --Some sloppy workaround for JJSploit support.
 if 'script'=='sc' then connect=nil
-	loadstring(script.AnimLocal.Source:match'%-%-{B}%-%-(.+)%-%-{F}%-%-')
+	local src=script.AnimLocal.Source
+		:match'%-%-{B}%-%-(.+)%-%-{F}%-%-'
+		:gsub('require','newReq')
+	loadstring(src)
 	fireClients=connect
 	
 elseif isCl then
 	local evt=script.BindableEvent
 	lcl.Event.Value=evt
-	
-	--Only run once the script could locate the event.
-	lcl.Disabled=false
 	
 	--A boring wrapper method.
 	function fireClients(...)evt:Fire(...)end
@@ -523,16 +524,14 @@ else
 	--Insert a copy of 'AnimLocal' where not found.
 	function insertLcl(par)
 		if not par:findFirstChild'AnimLocal' then
-			local cl=lcl:clone()
-			cl.Parent=par
-			cl.Disabled=false
+			lcl:clone().Parent=par
 		end
 	end
 	
 	--Does the inserting.
 	lcl.Parent=game.StarterPlayer.StarterPlayerScripts
 	for i,pl in pairs(game.Players:children()) do
-		insertLcl(pl.PlayerScripts)
+		insertLcl(pl:WaitForChild'PlayerScripts')
 	end
 
 	--Just another boring wrapper method.
@@ -817,14 +816,8 @@ api={
 		)
 	end,
 	
-	--TODO: Toggles whether the players are shown.
-	TogglePlayers=function(options)
-		
-		--String ('all', 'others', or 'self')
-		local m=options.Mode
-		
-		--Boolean
-		local s=options.Show
+	--Hides the characters.
+	HideCharacters=function(m)
 		
 		--Variable must be initialised before error-handling.
 		local mS=m and(typeof(m)=='string'and m:lower()or'')or'all'
@@ -832,22 +825,22 @@ api={
 		do local e
 			if mS~='all'and mS~='others'and mS~='self'then e=true
 				error('\'Mode\' should be either \'all\', \'others\', or \'self\'.',2)
-			elseif typeof(s)~='boolean' then
-				error('\'Show\' isn\'t a valid boolean.',2)
 			end
 			
 			if e then
 			return end
 		end
+		
+		--Not-so-convoluted logic.
+		local selph,others=true,true
+		if mS=='self' then others=false
+		elseif mS=='others' then selph=false end
+		
+		fireClients('TChar',true,selph,others)
 	end,
 	
-	ToggleGui=function(options)
-		
-		--String ('all', 'core', 'user')
-		local m=options.Mode
-		
-		--Boolean
-		local s=options.Show
+	--Enables GUI that fits the mode parameter.
+	ShowGui=function(m)
 		
 		--Variable must be initialised before error-handling.
 		local mS=m and(typeof(m)=='string'and m:lower()or'')or'all'
@@ -855,8 +848,6 @@ api={
 		do local e
 			if mS~='all'and mS~='core'and mS~='user'then e=true
 				error('\'Mode\' should be either \'all\', \'core\', or \'user\'.',2)
-			elseif typeof(s)~='boolean' then
-				error('\'Show\' isn\'t a valid boolean.',2)
 			end
 			
 			if e then
@@ -868,7 +859,30 @@ api={
 		if mS=='user' then core=false
 		elseif mS=='core' then user=false end
 		
-		fireClients('TGui',s,core,user)
+		fireClients('TGui',true,core,user)
+	end,
+	
+	--Enables GUI that fits the mode parameter.
+	HideGui=function(m)
+		
+		--Variable must be initialised before error-handling.
+		local mS=m and(typeof(m)=='string'and m:lower()or'')or'all'
+		
+		do local e
+			if mS~='all'and mS~='core'and mS~='user'then e=true
+				error('\'Mode\' should be either \'all\', \'core\', or \'user\'.',2)
+			end
+			
+			if e then
+			return end
+		end
+		
+		--Not-so-convoluted logic.
+		local core,user=true,true
+		if mS=='user' then core=false
+		elseif mS=='core' then user=false end
+		
+		fireClients('TGui',false,core,user)
 	end,
 	
 	--Wrapped in order to properly handle errors in the next scope down.
@@ -986,7 +1000,7 @@ _G.AnimationAPI=api
 return api]]></ProtectedString>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
-			<Item class="Script" referent="RBX3114231D8FF14CF4916DC446614EF771">
+			<Item class="Script" referent="RBX8E6246B8B7EF4621AC4E21A6D06C8642">
 				<Properties>
 					<bool name="Disabled">true</bool>
 					<Content name="LinkedSource"><null></null></Content>
@@ -996,9 +1010,9 @@ return api]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="LocalScript" referent="RBXE105279A23B54CDE9C8B31E794CD51EA">
+			<Item class="LocalScript" referent="RBX67DD814D12F24A62B6F1A4B71E6E58A5">
 				<Properties>
-					<bool name="Disabled">true</bool>
+					<bool name="Disabled">false</bool>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">AnimLocal</string>
 					<string name="ScriptGuid">{92C4FD5C-2DA8-4D73-BE60-F3BB83FC0467}</string>
@@ -1006,6 +1020,7 @@ return api]]></ProtectedString>
 local evt=script.Event.Value
 local sc=evt.Parent
 local util=require(sc.Util)
+local lp=game.Players.LocalPlayer
 
 --It's all the developers' fault this has to be.
 local humanoidSt8s={}
@@ -1055,9 +1070,31 @@ function connect(name,...)
 		cf=CFrame.new(cf.p,fo.p)
 		cc.CFrame,cc.Focus=cf,fo
 		
-	--ToggleGui.
+	--Toggles the graphical user interface.
 	elseif name=='TGui' then
 		require(sc.ToggleGui)(...)
+		
+	--Toggles the character.
+	elseif name=='TChar' then
+		local tc=require(sc.ToggleChar)
+		local char=lp.Character
+		local hide,selph,others=...
+		
+		--If they're gonna hide, then so are newcomers.
+		if others then tc.setDef(hide) end
+		
+		--Iterating over all players.
+		for i,pl in pairs(game.Players:children()) do
+			
+			--Other players do this.
+			if pl~=lp and others then
+				tc.setChar(pl,hide)
+				
+			--An'you player do this.
+			elseif pl==lp and selph then
+				tc.setChar(pl,hide)
+			end
+		end
 	end
 end
 
@@ -1065,19 +1102,18 @@ end
 
 --Connects the events over.
 if evt:isA'BindableEvent' then evt.Event:Connect(connect)
-else evt.OnClientEvent:Connect(connect) end
-return c]]></ProtectedString>
+else evt.OnClientEvent:Connect(connect) end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="ObjectValue" referent="RBXBF10D3B3E3244B468DCA7EB1874BF1E6">
+				<Item class="ObjectValue" referent="RBXA9B9CF8C038F47328581C18FE165B6EC">
 					<Properties>
 						<string name="Name">Event</string>
 						<BinaryString name="Tags"></BinaryString>
-						<Ref name="Value">RBXF6130EABD6424F458EB9AEF73F77BA19</Ref>
+						<Ref name="Value">RBX1E126F2A721041139835ACCB63ADAE98</Ref>
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="ModuleScript" referent="RBX98AF2263B7F44569B3179A56FBD44F3B">
+			<Item class="ModuleScript" referent="RBX5469FC1005A440828B485F7C7229158D">
 				<Properties>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">PackageUtil</string>
@@ -1157,19 +1193,19 @@ return {ApplyBodyPart=applyBodyPart,BuildRigFromAttachments=buildRigFromAttachme
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="BindableEvent" referent="RBX46E6D090052A457D99B83CB14E723DDA">
+			<Item class="BindableEvent" referent="RBX80BC896BE3F4443FAF1F50E245F47AE3">
 				<Properties>
 					<string name="Name">BindableEvent</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="RemoteEvent" referent="RBXF6130EABD6424F458EB9AEF73F77BA19">
+			<Item class="RemoteEvent" referent="RBX1E126F2A721041139835ACCB63ADAE98">
 				<Properties>
 					<string name="Name">RemoteEvent</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBX2311CD3D6579415AAC91610383BE538C">
+			<Item class="ModuleScript" referent="RBX90BF38CBFA8C4DCFAD0602ED93F6453F">
 				<Properties>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">SetCharAnimation</string>
@@ -1325,7 +1361,7 @@ end,stopCustomAnims}]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="ModuleScript" referent="RBXAF95A7F8C7B64E10A1DD9E1444542F27">
+			<Item class="ModuleScript" referent="RBXC4CDF014C2DC4F34A9BD2877E290B846">
 				<Properties>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">Util</string>
@@ -1438,7 +1474,7 @@ return{
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
-			<Item class="Model" referent="RBX60B064A9E3604CB4BA4753EB89D4A1A1">
+			<Item class="Model" referent="RBX6B0442DF8BB244BB9FA21F255C4F0A96">
 				<Properties>
 					<CoordinateFrame name="ModelInPrimary">
 						<X>0</X>
@@ -1455,10 +1491,10 @@ return{
 						<R22>1</R22>
 					</CoordinateFrame>
 					<string name="Name">R15</string>
-					<Ref name="PrimaryPart">RBX960122602BAD4285B585736277233625</Ref>
+					<Ref name="PrimaryPart">RBX37C1331A3B33429CA640BE9099D9E157</Ref>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Part" referent="RBX960122602BAD4285B585736277233625">
+				<Item class="Part" referent="RBX37C1331A3B33429CA640BE9099D9E157">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<float name="BackParamA">-0.5</float>
@@ -1531,7 +1567,7 @@ return{
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBXFE8BB4A15BD94F6899F45B165B346C96">
+					<Item class="Attachment" referent="RBX3E550CAA24B8482D8B0ACED0EAB6F258">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0</X>
@@ -1553,7 +1589,7 @@ return{
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX9D734816E18C48D49F48E34CBD67AF41">
+				<Item class="MeshPart" referent="RBX37FACA32631D437D8CDED7A195DBFE35">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -1633,7 +1669,7 @@ return{
 							<Z>0.999999881</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBXEC4F83DE2CC54BF68299FA6A97597992">
+					<Item class="Attachment" referent="RBX455CDEA7DBE649D6B4CF2EED77B187FE">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0.000478863716</X>
@@ -1654,7 +1690,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXFCE3188C1F9D4FCE90854508D755C0AC">
+					<Item class="Attachment" referent="RBXEDFFC15C83F5416DAB5E646F398D0261">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-1.1920929e-07</X>
@@ -1675,7 +1711,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBXA7C6970C181246A195BAF59B727F6836">
+					<Item class="Motor6D" referent="RBX906CDDD62C174344A5DBF4D3928951B5">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>0.000478506088</X>
@@ -1709,13 +1745,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">LeftWrist</string>
-							<Ref name="Part0">RBX4BD98A27C7574130B0127994BC3FF439</Ref>
-							<Ref name="Part1">RBX9D734816E18C48D49F48E34CBD67AF41</Ref>
+							<Ref name="Part0">RBX79CEB42E79364AADAEBB859552E2BFBC</Ref>
+							<Ref name="Part1">RBX37FACA32631D437D8CDED7A195DBFE35</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX4BD98A27C7574130B0127994BC3FF439">
+				<Item class="MeshPart" referent="RBX79CEB42E79364AADAEBB859552E2BFBC">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -1795,7 +1831,7 @@ return{
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX39F24BD2DEE848E2B857206670B6F96D">
+					<Item class="Attachment" referent="RBX445D6A2638FE4F96B589D902EB1F70F1">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0.000478506088</X>
@@ -1816,7 +1852,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXCA07678C4F644817B80BB34CE105B7A1">
+					<Item class="Attachment" referent="RBXAF8EA6FA949042DCA497924BB499E6A9">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0.000478506088</X>
@@ -1837,7 +1873,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX144EEAF8595B4216A0D819A091CCC504">
+					<Item class="Motor6D" referent="RBX9414292A6E97466FB4B4F79AEC1499A5">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>0.000479102135</X>
@@ -1871,13 +1907,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">LeftElbow</string>
-							<Ref name="Part0">RBX8C8FCACC6F2742559FACF3C35F38DF2B</Ref>
-							<Ref name="Part1">RBX4BD98A27C7574130B0127994BC3FF439</Ref>
+							<Ref name="Part0">RBX7F0EDAF356574354A9ED494BB786E9DE</Ref>
+							<Ref name="Part1">RBX79CEB42E79364AADAEBB859552E2BFBC</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX8C8FCACC6F2742559FACF3C35F38DF2B">
+				<Item class="MeshPart" referent="RBX7F0EDAF356574354A9ED494BB786E9DE">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -1957,7 +1993,7 @@ return{
 							<Z>0.99999994</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBXE736BE6F1E67440B996CC95BDD810C26">
+					<Item class="Attachment" referent="RBX04511DC6206E4067B514ED16005208DC">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0.250109196</X>
@@ -1978,7 +2014,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXEAC6E3B961924A0AABB6A45D91ADA800">
+					<Item class="Attachment" referent="RBX9BDA1AD71905478AA5B03CFA5D40D6D7">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0.000479102135</X>
@@ -1999,7 +2035,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX0EAEB5FBC3B94967A294802EA624E6CF">
+					<Item class="Attachment" referent="RBX42C29409165548A2875AAD0A6E868FA3">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>2.38418579e-07</X>
@@ -2020,7 +2056,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBXE181E020AD0340BA82ED63F206287C89">
+					<Item class="Motor6D" referent="RBX01B31E04AC0A4A2BA60E9E5052EB7252">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-1.24989128</X>
@@ -2054,13 +2090,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">LeftShoulder</string>
-							<Ref name="Part0">RBX1107825D17C54839A2194FCC2F7921C3</Ref>
-							<Ref name="Part1">RBX8C8FCACC6F2742559FACF3C35F38DF2B</Ref>
+							<Ref name="Part0">RBXE71A2C7A6E874D18B86256E7FEA06080</Ref>
+							<Ref name="Part1">RBX7F0EDAF356574354A9ED494BB786E9DE</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBXB31E90E95D214DB487D77A996A911BDD">
+				<Item class="MeshPart" referent="RBX05AA5D0830C3410FBCC90D722E918574">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -2140,7 +2176,7 @@ return{
 							<Z>0.999999881</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX685EC69BDE8646B9971BC93FE0CDCDEE">
+					<Item class="Attachment" referent="RBX8BC3AA492AF54C07AAD4BEE55721DB6E">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>3.57627869e-07</X>
@@ -2161,7 +2197,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX0AC6DC69D1154EBD90256603E0BEC2A0">
+					<Item class="Attachment" referent="RBX03DC5BF242FD4E51BC7C3C0114F89012">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0</X>
@@ -2182,7 +2218,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX0FA1A133D6FB4193BCCC44DD7057C12B">
+					<Item class="Motor6D" referent="RBX6AA27CB9B91E470BACE3D26346C973D6">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>1.1920929e-07</X>
@@ -2216,13 +2252,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">RightWrist</string>
-							<Ref name="Part0">RBX9BB886B5148941E0A0FFAC3656CF3C66</Ref>
-							<Ref name="Part1">RBXB31E90E95D214DB487D77A996A911BDD</Ref>
+							<Ref name="Part0">RBX16ECC2769E65427E912B98C4B812F7FA</Ref>
+							<Ref name="Part1">RBX05AA5D0830C3410FBCC90D722E918574</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX9BB886B5148941E0A0FFAC3656CF3C66">
+				<Item class="MeshPart" referent="RBX16ECC2769E65427E912B98C4B812F7FA">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -2302,7 +2338,7 @@ return{
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX6A9919B958E543DE96DE0DAE6842ED64">
+					<Item class="Attachment" referent="RBX09D4631EA92349B0BBE3CFF2B9A38F6C">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>1.1920929e-07</X>
@@ -2323,7 +2359,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXBB05AD3D5A5B414582AC60AEA2C318A5">
+					<Item class="Attachment" referent="RBXB391AA7C17D24A3597DA2A952705D1D6">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>1.1920929e-07</X>
@@ -2344,7 +2380,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX4FE784D5BFE24759BA300E8073657E62">
+					<Item class="Motor6D" referent="RBX3F66EB9E2B364964A2903F07C9E89FD3">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-5.96046448e-07</X>
@@ -2378,13 +2414,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">RightElbow</string>
-							<Ref name="Part0">RBX752069046670483D961BC3AB03327CA4</Ref>
-							<Ref name="Part1">RBX9BB886B5148941E0A0FFAC3656CF3C66</Ref>
+							<Ref name="Part0">RBXD72E1D3BC9D2478AB48BB1234676241C</Ref>
+							<Ref name="Part1">RBX16ECC2769E65427E912B98C4B812F7FA</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX752069046670483D961BC3AB03327CA4">
+				<Item class="MeshPart" referent="RBXD72E1D3BC9D2478AB48BB1234676241C">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -2464,7 +2500,7 @@ return{
 							<Z>0.99999994</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBXE8DC7C7D1B3D44D18A2F5D5E8DBA1D9F">
+					<Item class="Attachment" referent="RBX763FE683EBA541A9B665CA6D9A957CA0">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0.250020266</X>
@@ -2485,7 +2521,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX1223DF0EF910481B8D6B9B869B8B58A1">
+					<Item class="Attachment" referent="RBXBE9D8A40008A412D949DC5912D1CBFB4">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-5.96046448e-07</X>
@@ -2506,7 +2542,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXC802DC325A1F4D64B116711426A5F5FE">
+					<Item class="Attachment" referent="RBX6D59A6061BB547F19F4E2540329B756B">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-9.53674316e-07</X>
@@ -2527,7 +2563,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBXBF098ABAF89249BD85048E259B9984A5">
+					<Item class="Motor6D" referent="RBXF43AE3872B824F82B5F6CB8077F744C1">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>1.24998045</X>
@@ -2561,13 +2597,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">RightShoulder</string>
-							<Ref name="Part0">RBX1107825D17C54839A2194FCC2F7921C3</Ref>
-							<Ref name="Part1">RBX752069046670483D961BC3AB03327CA4</Ref>
+							<Ref name="Part0">RBXE71A2C7A6E874D18B86256E7FEA06080</Ref>
+							<Ref name="Part1">RBXD72E1D3BC9D2478AB48BB1234676241C</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX1107825D17C54839A2194FCC2F7921C3">
+				<Item class="MeshPart" referent="RBXE71A2C7A6E874D18B86256E7FEA06080">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -2647,7 +2683,7 @@ return{
 							<Z>1.00000036</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX5AAEBE6DB62C4E3784632693D17EC986">
+					<Item class="Attachment" referent="RBX8388C7F678C14F98B49D562A7785114F">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-5.96046448e-08</X>
@@ -2668,7 +2704,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXCE4DD06813EB4C999CF24CF57CAEC0E9">
+					<Item class="Attachment" referent="RBX1A1512F9823F4A079E06822F618512AD">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-5.96046448e-08</X>
@@ -2689,7 +2725,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXF53813A28FA84D33B2AE2EABBB7FD9A0">
+					<Item class="Attachment" referent="RBXF2E29CECC46D47F08A1760E3A35BFEE7">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-1.24989128</X>
@@ -2710,7 +2746,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX50E2E2C3A6844EA0B80C091141823A47">
+					<Item class="Attachment" referent="RBX4691C430D25044CCA82D47A689D02752">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>1.24998045</X>
@@ -2731,7 +2767,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX81BEECFC2C7C49AE9F212BD8CA375308">
+					<Item class="Attachment" referent="RBXFAE44B28018443E29AC5371898DA65F7">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-5.96046448e-08</X>
@@ -2752,7 +2788,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXDDF34CF1AF13477F9609512372F4E9BA">
+					<Item class="Attachment" referent="RBX8F5CB1BCC9B440BDA355F5FA639F7C4F">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-5.96046448e-08</X>
@@ -2773,7 +2809,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX970ADFF4E63542DABE565BA9D1DC020C">
+					<Item class="Attachment" referent="RBXEF670747C4EE4A6B906E3983967D22A1">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0.999999881</X>
@@ -2794,7 +2830,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXB04B489B05704635832D3E1F200B8DB5">
+					<Item class="Attachment" referent="RBXE1C7D42E1FFE4B788EC2A61B0DEE5A88">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0.99999994</X>
@@ -2815,7 +2851,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXFBC4DAEDC42040A89E0386B645E85263">
+					<Item class="Attachment" referent="RBXB5F69C51AD1A4C70A5D92CBCB8929A2A">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0</X>
@@ -2836,7 +2872,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX7D33492AC60944C8B8B76E5DC443EA0A">
+					<Item class="Motor6D" referent="RBXD46ADFC455FB4810AEE08D33C58C6CDA">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-1.1920929e-07</X>
@@ -2870,13 +2906,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">Waist</string>
-							<Ref name="Part0">RBXCB7E75F911354F49BFE203FEA606C156</Ref>
-							<Ref name="Part1">RBX1107825D17C54839A2194FCC2F7921C3</Ref>
+							<Ref name="Part0">RBX6EF38AC05AE44B3CA7C958A5FD9B2E5A</Ref>
+							<Ref name="Part1">RBXE71A2C7A6E874D18B86256E7FEA06080</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBXAC02AABD580F4D4FB7914ED512338166">
+				<Item class="MeshPart" referent="RBX425ED0C7505843628674481809B5B805">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -2956,7 +2992,7 @@ return{
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX93CB56651CD14EBC8D5A965991A37338">
+					<Item class="Attachment" referent="RBX6967BC274F8145EAA0AB42C5305AFD87">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-2.38418579e-07</X>
@@ -2977,7 +3013,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBXAA563BC333D7408AB6B9978A5941118B">
+					<Item class="Motor6D" referent="RBXA8FCD4B05AC143C1AE84E231E1612726">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-1.78813934e-07</X>
@@ -3011,13 +3047,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">LeftAnkle</string>
-							<Ref name="Part0">RBXCBF722202C244BD0B65B29760E19383E</Ref>
-							<Ref name="Part1">RBXAC02AABD580F4D4FB7914ED512338166</Ref>
+							<Ref name="Part0">RBX42DAC146132D4983BF60990AAD0370A5</Ref>
+							<Ref name="Part1">RBX425ED0C7505843628674481809B5B805</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBXCBF722202C244BD0B65B29760E19383E">
+				<Item class="MeshPart" referent="RBX42DAC146132D4983BF60990AAD0370A5">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -3097,7 +3133,7 @@ return{
 							<Z>1.00000012</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX49DFBCC6CA9542099BADC6C0F83D1215">
+					<Item class="Attachment" referent="RBX01CC0BBCCFBC41BF9FFC2007144CBB05">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0</X>
@@ -3118,7 +3154,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX20339A5A305B402D975DF8FBB9BCBEE7">
+					<Item class="Attachment" referent="RBXADE618DBD10E493EBCE0FABBA63E56B4">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-1.78813934e-07</X>
@@ -3139,7 +3175,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX7A6E1EA8CF994811B4D79D2E19E49654">
+					<Item class="Motor6D" referent="RBXF4FD0F598FC44FADA39CD55ECCE03AFB">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>5.96046448e-08</X>
@@ -3173,13 +3209,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">LeftKnee</string>
-							<Ref name="Part0">RBX236A6EC16C894BB5A2D18AABAD868C90</Ref>
-							<Ref name="Part1">RBXCBF722202C244BD0B65B29760E19383E</Ref>
+							<Ref name="Part0">RBX6A576817A41247EAA42E07D867548AAB</Ref>
+							<Ref name="Part1">RBX42DAC146132D4983BF60990AAD0370A5</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX236A6EC16C894BB5A2D18AABAD868C90">
+				<Item class="MeshPart" referent="RBX6A576817A41247EAA42E07D867548AAB">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -3259,7 +3295,7 @@ return{
 							<Z>0.999999881</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBXCC4481F065784C31B99AC0D7311EF044">
+					<Item class="Attachment" referent="RBXF5C0FCFF72AA497AB100597D56A03559">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>5.96046448e-08</X>
@@ -3280,7 +3316,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXC76BA53CC57249DCB6B3DBF0F3696FA8">
+					<Item class="Attachment" referent="RBXD321E6AECF8849F084317B4C6C0E57B6">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>5.96046448e-08</X>
@@ -3301,7 +3337,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX4338921A69404623A15E07A4CD6F95A9">
+					<Item class="Motor6D" referent="RBXB755CA3AFB01461CA4558D58EEC81EFF">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-0.500000119</X>
@@ -3335,13 +3371,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">LeftHip</string>
-							<Ref name="Part0">RBXCB7E75F911354F49BFE203FEA606C156</Ref>
-							<Ref name="Part1">RBX236A6EC16C894BB5A2D18AABAD868C90</Ref>
+							<Ref name="Part0">RBX6EF38AC05AE44B3CA7C958A5FD9B2E5A</Ref>
+							<Ref name="Part1">RBX6A576817A41247EAA42E07D867548AAB</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX7FF1A9EAB3C34F00976259EDB8672032">
+				<Item class="MeshPart" referent="RBXAD26A49ED2A147E29B31E3EA06C6FB62">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -3421,7 +3457,7 @@ return{
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX6DA56ED3CB3B46859090CB88F909FF80">
+					<Item class="Attachment" referent="RBX20F6175EC6454AB081FA36BBC88E63D0">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0</X>
@@ -3442,7 +3478,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX3A9D544706544F6DA8BE2C5FC4160820">
+					<Item class="Motor6D" referent="RBXD916B39F1C104B51B663CB4FE7414A69">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-0</X>
@@ -3476,13 +3512,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">RightAnkle</string>
-							<Ref name="Part0">RBXE28191462F414014AA2D293EFA698C0D</Ref>
-							<Ref name="Part1">RBX7FF1A9EAB3C34F00976259EDB8672032</Ref>
+							<Ref name="Part0">RBXCFB92DF96F8147428B81F1567D7F809E</Ref>
+							<Ref name="Part1">RBXAD26A49ED2A147E29B31E3EA06C6FB62</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBXE28191462F414014AA2D293EFA698C0D">
+				<Item class="MeshPart" referent="RBXCFB92DF96F8147428B81F1567D7F809E">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -3562,7 +3598,7 @@ return{
 							<Z>1.00000012</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX347FED1CC40248ACA2C028C46439D899">
+					<Item class="Attachment" referent="RBX644764C9D1E8404D9E10AA27D9C8E68C">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0</X>
@@ -3583,7 +3619,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX6DC39D6DDED64D368EB6FBD07D2628D8">
+					<Item class="Attachment" referent="RBXCA8D5266D2BD4DCAA3983BEA2387BE98">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0</X>
@@ -3604,7 +3640,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX59FB4079D9FB47078202ECB6AEA1FDA2">
+					<Item class="Motor6D" referent="RBXD95728272F474F3BA1C2A9605C6EA98A">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-0</X>
@@ -3638,13 +3674,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">RightKnee</string>
-							<Ref name="Part0">RBX35F94076EA634EAE996EC9812200BD69</Ref>
-							<Ref name="Part1">RBXE28191462F414014AA2D293EFA698C0D</Ref>
+							<Ref name="Part0">RBX2C118257FA7F4208B45C1684565FCF1B</Ref>
+							<Ref name="Part1">RBXCFB92DF96F8147428B81F1567D7F809E</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBX35F94076EA634EAE996EC9812200BD69">
+				<Item class="MeshPart" referent="RBX2C118257FA7F4208B45C1684565FCF1B">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -3724,7 +3760,7 @@ return{
 							<Z>0.999999881</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX4A53CF48DEB94A719527EAD2B18E0DE7">
+					<Item class="Attachment" referent="RBXF0266D0C599A4A09938FDEE190239776">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0</X>
@@ -3745,7 +3781,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXDBFC65A1A09A4C0489CCB078B4B3313D">
+					<Item class="Attachment" referent="RBX320F2399E85745F0BAAE870EC9772EC2">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0</X>
@@ -3766,7 +3802,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX5CAF548E1ED949F78C50AF9CD99DC813">
+					<Item class="Motor6D" referent="RBX8D3994E512B34D58B2036C4DF14BB647">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>0.499999881</X>
@@ -3800,13 +3836,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">RightHip</string>
-							<Ref name="Part0">RBXCB7E75F911354F49BFE203FEA606C156</Ref>
-							<Ref name="Part1">RBX35F94076EA634EAE996EC9812200BD69</Ref>
+							<Ref name="Part0">RBX6EF38AC05AE44B3CA7C958A5FD9B2E5A</Ref>
+							<Ref name="Part1">RBX2C118257FA7F4208B45C1684565FCF1B</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="MeshPart" referent="RBXCB7E75F911354F49BFE203FEA606C156">
+				<Item class="MeshPart" referent="RBX6EF38AC05AE44B3CA7C958A5FD9B2E5A">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -3886,7 +3922,7 @@ return{
 							<Z>1.00000012</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Attachment" referent="RBX528CBF5E5B5B40F88D5A25C7DF92C792">
+					<Item class="Attachment" referent="RBX72246E99B5124F5D84C94E35F8DC96C6">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-1.1920929e-07</X>
@@ -3907,7 +3943,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX80C00C6B966C4ECBB0BF71A1324A068E">
+					<Item class="Attachment" referent="RBX3FF6D1854D6D4F3191CC6714B1BDED7E">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-1.1920929e-07</X>
@@ -3928,7 +3964,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX69768C7F039B42099B4805BFADFDDF75">
+					<Item class="Attachment" referent="RBX7A210116D5324A569407009BEB13532A">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0.500000119</X>
@@ -3949,7 +3985,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX25CAD8191756468AB762AC75A1B314F6">
+					<Item class="Attachment" referent="RBX4DBED7A69FC2468F98055C726E2FB4B9">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0.499999881</X>
@@ -3970,7 +4006,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXBF4556AA865F4A1CB9EB59BA7ADB7395">
+					<Item class="Attachment" referent="RBX7E3D48AB5E744D4FB4625809DC597FE6">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0</X>
@@ -3991,7 +4027,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX50E5B106639F44168D255386761F4476">
+					<Item class="Attachment" referent="RBXB7330C4A8D0348F0B6EEEDFEFE993D0F">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0</X>
@@ -4012,7 +4048,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX25D659E81BF8447FB4FEBB484CF5F69C">
+					<Item class="Attachment" referent="RBX5CBD2E9DE1E8469A9AA79A47C8032F84">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>0</X>
@@ -4033,7 +4069,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX8A5DAAACA693440C860C074C7294AC52">
+					<Item class="Motor6D" referent="RBXF258E3190BA2420BA82F981A2A2AE157">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>0</X>
@@ -4067,13 +4103,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">Root</string>
-							<Ref name="Part0">RBX960122602BAD4285B585736277233625</Ref>
-							<Ref name="Part1">RBXCB7E75F911354F49BFE203FEA606C156</Ref>
+							<Ref name="Part0">RBX37C1331A3B33429CA640BE9099D9E157</Ref>
+							<Ref name="Part1">RBX6EF38AC05AE44B3CA7C958A5FD9B2E5A</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Humanoid" referent="RBX4606E6F1C59446808F27EBED7352C4F1">
+				<Item class="Humanoid" referent="RBX61ECF709F5A1439CBA5C50EE90F3C33B">
 					<Properties>
 						<bool name="AutoJumpEnabled">true</bool>
 						<bool name="AutoRotate">true</bool>
@@ -4100,14 +4136,14 @@ return{
 						<BinaryString name="Tags"></BinaryString>
 						<float name="WalkSpeed">16</float>
 					</Properties>
-					<Item class="Animator" referent="RBXB9D83C8548BE4B6BA78CC4C8299267F9">
+					<Item class="Animator" referent="RBX418CB954C246495EBDAC5EABC2EB3F1E">
 						<Properties>
 							<string name="Name">Animator</string>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Part" referent="RBXDEFC95F6BDB147AAB065833C6EED5E8A">
+				<Item class="Part" referent="RBX080E46AEFFA54B10B62029842433BFEC">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -4180,7 +4216,7 @@ return{
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="SpecialMesh" referent="RBX71AA69A9349C41A7B1CA2EB5D2C373A4">
+					<Item class="SpecialMesh" referent="RBX47ECFA20826E40C29B041E3EC2558587">
 						<Properties>
 							<token name="LODX">2</token>
 							<token name="LODY">2</token>
@@ -4206,7 +4242,7 @@ return{
 							</Vector3>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXE069E68F10A94D238C7506B76E92EA84">
+					<Item class="Attachment" referent="RBX4A53E4592524410FBD9D66D315364BC7">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>3.93568822e-09</X>
@@ -4227,7 +4263,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBX071A8015880D404BBA6A8958810D129D">
+					<Item class="Attachment" referent="RBXBE345463C00F4F879950E434BEAD999D">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>3.93568866e-09</X>
@@ -4248,7 +4284,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXDBC7700AF7694AEBBD3F256F76C7279E">
+					<Item class="Attachment" referent="RBX88705ACB8A10417185114A55AD848D8B">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>8.65851391e-09</X>
@@ -4269,7 +4305,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXEDC5F95BFECB478ABA76F6AD31AFFCB1">
+					<Item class="Attachment" referent="RBXD783BBC49807439BA88EC95512DA7359">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>8.65851391e-09</X>
@@ -4290,7 +4326,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Attachment" referent="RBXB6A291580C0D4E769ECFF66D7B0BF351">
+					<Item class="Attachment" referent="RBX277A253038EF4039B2F0E177A5BB6FEE">
 						<Properties>
 							<CoordinateFrame name="CFrame">
 								<X>-0</X>
@@ -4311,7 +4347,7 @@ return{
 							<bool name="Visible">false</bool>
 						</Properties>
 					</Item>
-					<Item class="Decal" referent="RBX3D61AA371E57455A84E786201078BB82">
+					<Item class="Decal" referent="RBX8BA6C8699F4149AEAA22BF0F09FFD25A">
 						<Properties>
 							<Color3 name="Color3">
 								<R>1</R>
@@ -4325,7 +4361,7 @@ return{
 							<float name="Transparency">0</float>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX5E96E3184E5E4023B5B230B882E46047">
+					<Item class="Motor6D" referent="RBX44FB7FCEC15E406886B899B8B98BEC51">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-5.96046448e-08</X>
@@ -4359,13 +4395,13 @@ return{
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0</float>
 							<string name="Name">Neck</string>
-							<Ref name="Part0">RBX1107825D17C54839A2194FCC2F7921C3</Ref>
-							<Ref name="Part1">RBXDEFC95F6BDB147AAB065833C6EED5E8A</Ref>
+							<Ref name="Part0">RBXE71A2C7A6E874D18B86256E7FEA06080</Ref>
+							<Ref name="Part1">RBX080E46AEFFA54B10B62029842433BFEC</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Script" referent="RBXAC3CD8BA674944B59145CC46CEE9CC8C">
+				<Item class="Script" referent="RBX8BBECD9E8E1F4F96905855BBEC4F50D1">
 					<Properties>
 						<bool name="Disabled">true</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -5000,13 +5036,13 @@ while Character.Parent ~= nil do
 end]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="StringValue" referent="RBXBEB60F519B2B4950B29D4D2931259D83">
+					<Item class="StringValue" referent="RBXBC9D55A233D34993B20CCCA7C1772CA2">
 						<Properties>
 							<string name="Name">cheer</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX4FB1B7632D1E4953B01341CE00905FC3">
+						<Item class="Animation" referent="RBXD2DD383CAB104D7496F06362F94149CD">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507770677</url></Content>
 								<string name="Name">CheerAnim</string>
@@ -5014,13 +5050,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX6F058CA476024A83B2540F46C5B525AC">
+					<Item class="StringValue" referent="RBX420034BD6F7148E29FB0F8FDBA9CC2BD">
 						<Properties>
 							<string name="Name">climb</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBXAFCF9B4A834D477DABC0F8B14AEF8116">
+						<Item class="Animation" referent="RBXC7CF6278560F4A28B2C20B801CD7DA55">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507765644</url></Content>
 								<string name="Name">ClimbAnim</string>
@@ -5028,19 +5064,19 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX3971EEF2ACF845198821C67E47A1A263">
+					<Item class="StringValue" referent="RBX214826C9E04B476E93D70F4A97D04D62">
 						<Properties>
 							<string name="Name">dance</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX13170451E47B42299300A3B64F5450EA">
+						<Item class="Animation" referent="RBXF836E815C23A4917B0B750C90A0C7F2B">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507771019</url></Content>
 								<string name="Name">Animation1</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX0D04E60FE1174190A325E63E7E17961D">
+							<Item class="NumberValue" referent="RBXA76BD815E31140DDA8F103D986CC169A">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5048,13 +5084,13 @@ end]]></ProtectedString>
 								</Properties>
 							</Item>
 						</Item>
-						<Item class="Animation" referent="RBX78C2097888324545A870EEF9DE452267">
+						<Item class="Animation" referent="RBXACC9F2B8AAAB4AE5907B500A804F2109">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507771955</url></Content>
 								<string name="Name">Animation2</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX0726FF370539484782700A88B16FB2C7">
+							<Item class="NumberValue" referent="RBXBA40C433FE0242FEBBEC5AB64027DE80">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5062,13 +5098,13 @@ end]]></ProtectedString>
 								</Properties>
 							</Item>
 						</Item>
-						<Item class="Animation" referent="RBXA7E6C048EF1F4545AAD30093D60A7260">
+						<Item class="Animation" referent="RBXD657CE11BBF94858B262F76FBEE50AE6">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507772104</url></Content>
 								<string name="Name">Animation3</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBXDE6D19118C9240698E49D791316B6418">
+							<Item class="NumberValue" referent="RBX9253B1154A5F4D42927C18DB006C0848">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5077,19 +5113,19 @@ end]]></ProtectedString>
 							</Item>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX9524209EF45343298D7A064FFB4AF82D">
+					<Item class="StringValue" referent="RBX7C4E5B21F7814731A8FBD1D5FD8DA2F9">
 						<Properties>
 							<string name="Name">dance2</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX7A5B343C20814F40A13F6D9449341C96">
+						<Item class="Animation" referent="RBX7BD223D285E848B1AFEC6463CBF814A0">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507776043</url></Content>
 								<string name="Name">Animation1</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX849358262798400B994A7AD929D14BE6">
+							<Item class="NumberValue" referent="RBX4A9D3BB82BFE44AD8C1DEB202FE81B32">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5097,13 +5133,13 @@ end]]></ProtectedString>
 								</Properties>
 							</Item>
 						</Item>
-						<Item class="Animation" referent="RBX01B62AA920AD4A8F8C18B03982ADEBAF">
+						<Item class="Animation" referent="RBXDEB2646EB1ED45329BBEC0C5D499CC1D">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507776720</url></Content>
 								<string name="Name">Animation2</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBXD83DD2EF12EC435FAF62224DFA1E80FA">
+							<Item class="NumberValue" referent="RBX12C4A1387A6341EEBEB49B42F0688295">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5111,13 +5147,13 @@ end]]></ProtectedString>
 								</Properties>
 							</Item>
 						</Item>
-						<Item class="Animation" referent="RBXBED009A167F3453692ACE134DBA56849">
+						<Item class="Animation" referent="RBX7006314227DF432FB915AF7E81046A44">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507776879</url></Content>
 								<string name="Name">Animation3</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX34A3CC0B2AC344D385599356819DFD13">
+							<Item class="NumberValue" referent="RBX61143B38B955408E81FB65DD04AC99F9">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5126,19 +5162,19 @@ end]]></ProtectedString>
 							</Item>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXB55F2B2A501B40FC91D8AA055AE1537C">
+					<Item class="StringValue" referent="RBX9E3CF45816384A6FA2F6BF5DDF00122B">
 						<Properties>
 							<string name="Name">dance3</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBXD7D032FDE4DD4875B09C59FF8E226696">
+						<Item class="Animation" referent="RBXA67D2B1FD7574DBFAE37CAA8B0A24009">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507777268</url></Content>
 								<string name="Name">Animation1</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX40186E0EC82A46DBBBF9E9D168CB15C0">
+							<Item class="NumberValue" referent="RBXF24CE0525D79421B9A2F7A2540712BE9">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5146,13 +5182,13 @@ end]]></ProtectedString>
 								</Properties>
 							</Item>
 						</Item>
-						<Item class="Animation" referent="RBX8670F35B24974BF2896D770FBD65AE29">
+						<Item class="Animation" referent="RBX43B4115C56A940ECB8C3216CA8356DA2">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507777451</url></Content>
 								<string name="Name">Animation2</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX44DBD64D7F2F421D9AA4B98EE989F68D">
+							<Item class="NumberValue" referent="RBX28E321CFE07F4742B3B77F04C402602E">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5160,13 +5196,13 @@ end]]></ProtectedString>
 								</Properties>
 							</Item>
 						</Item>
-						<Item class="Animation" referent="RBX2063EB172F1C4F50B7ABBA49DBF8D5DC">
+						<Item class="Animation" referent="RBX7BE8A18A3E5041FFBAE371A42A0C782C">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507777623</url></Content>
 								<string name="Name">Animation3</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX20A3A163BE47410BB679D65DAD91EE66">
+							<Item class="NumberValue" referent="RBX5113A9668FC2438BA09199F7AB69ECD4">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5175,13 +5211,13 @@ end]]></ProtectedString>
 							</Item>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXF782CAB406B2406FA9E4BEA421B7210B">
+					<Item class="StringValue" referent="RBXA6192546BC264ABD9DE0B9149D7ED2D6">
 						<Properties>
 							<string name="Name">fall</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX67C17A03AE324A5C884440833EE3053E">
+						<Item class="Animation" referent="RBX02C068264CF1494B838DE32BD68C0C01">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507767968</url></Content>
 								<string name="Name">FallAnim</string>
@@ -5189,19 +5225,19 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXC6AD82B7E86F484E85E7F1281CFD1D1E">
+					<Item class="StringValue" referent="RBX2841C7CC9CE6453AB07299B64D860559">
 						<Properties>
 							<string name="Name">idle</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX89A9809D0F6E4DBA9FE5ECEDE5CC1168">
+						<Item class="Animation" referent="RBX4E5505E1399F4279AD588AC45EDF5F98">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507766388</url></Content>
 								<string name="Name">Animation1</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX3EAB8C3CAA8B46A9B2A5EB7DE2194894">
+							<Item class="NumberValue" referent="RBX4183C8D041FC4CF09FA2148522C41AFF">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5209,13 +5245,13 @@ end]]></ProtectedString>
 								</Properties>
 							</Item>
 						</Item>
-						<Item class="Animation" referent="RBXCCDE88D20B8B4C0E821211972FFCC734">
+						<Item class="Animation" referent="RBXF1EE32A6CCC6493C9A972E925281CDFD">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507766666</url></Content>
 								<string name="Name">Animation2</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBXF005060EA7C04FB99637E746712257FC">
+							<Item class="NumberValue" referent="RBXBE82E9EF3561411D83E52F9846B1E345">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -5224,13 +5260,13 @@ end]]></ProtectedString>
 							</Item>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX6F89E575A48F49DCA98EC259A47602C8">
+					<Item class="StringValue" referent="RBX4DDD315114F24713BC26EDB5BB7C1483">
 						<Properties>
 							<string name="Name">jump</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBXDF4C8121AFAB44FB85541B2B7A582592">
+						<Item class="Animation" referent="RBX67C57414BC8C48758C8A1B5CCA37AE97">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507765000</url></Content>
 								<string name="Name">JumpAnim</string>
@@ -5238,13 +5274,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX85AA3604517049B9B60B20896230E101">
+					<Item class="StringValue" referent="RBXE9091D5EC59D4A4481422176DDFE53B4">
 						<Properties>
 							<string name="Name">laugh</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX2A96EA9A04584892AC6E35AE981F40A9">
+						<Item class="Animation" referent="RBX02C54E2A27D84B0E8F41796443E0D4DC">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507770818</url></Content>
 								<string name="Name">LaughAnim</string>
@@ -5252,13 +5288,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXA464835B9C9F4A7B9168D3C0F400840D">
+					<Item class="StringValue" referent="RBX02AD9EF54C85420AB13B449B5F038528">
 						<Properties>
 							<string name="Name">point</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX1F6BB14E71AD44EDB30F4A7911FCFDBA">
+						<Item class="Animation" referent="RBXE547E36B3F1940C4BC8D03797FE37633">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507770453</url></Content>
 								<string name="Name">PointAnim</string>
@@ -5266,13 +5302,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX9FC0F077215D426A94F937A2E46067CA">
+					<Item class="StringValue" referent="RBXAE1F60DDA64D45E58038819D7B4C2B92">
 						<Properties>
 							<string name="Name">run</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX542C9324FE784811986E950F020F99E3">
+						<Item class="Animation" referent="RBX5C51DC2D5F11490EAC50EA2BAA1A0D46">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507767714</url></Content>
 								<string name="Name">RunAnim</string>
@@ -5280,13 +5316,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXC3B03D148E2549A797B8A06AB8EF500F">
+					<Item class="StringValue" referent="RBX74ADCA057EEE415FA9EFF35CFBA0F213">
 						<Properties>
 							<string name="Name">sit</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX71A0D5CE41404F08B5BAFF31798F79E1">
+						<Item class="Animation" referent="RBXE40DD9F83EEC43D3B6B90256D4AC9FCB">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507768133</url></Content>
 								<string name="Name">SitAnim</string>
@@ -5294,13 +5330,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX9DF96D6EB464402F8D76CB56430839CE">
+					<Item class="StringValue" referent="RBX78A322D60C204CD290418733BD4080E5">
 						<Properties>
 							<string name="Name">swim</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX673D9A2A54EC41A5B5E349A85925958C">
+						<Item class="Animation" referent="RBX018633C2AA7B4B259B0622A59862488D">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507784897</url></Content>
 								<string name="Name">Swim</string>
@@ -5308,13 +5344,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX39DA7DBC567A49329D1DCA31BD6080D1">
+					<Item class="StringValue" referent="RBX060C84DD2C6340909B660D07A0F52680">
 						<Properties>
 							<string name="Name">swimidle</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX4DA4B511CD7C491A91614E4731C340E7">
+						<Item class="Animation" referent="RBX114E40F468FC46D0A5E8AECD46CE3C1A">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=481825862</url></Content>
 								<string name="Name">SwimIdle</string>
@@ -5322,13 +5358,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXE2BE6364AD404C51A2F8AA5CC20CDC8D">
+					<Item class="StringValue" referent="RBX3FB1217225D444338C5E91E176F222E5">
 						<Properties>
 							<string name="Name">toollunge</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX66E0097357BC4594B45F6481D4D78456">
+						<Item class="Animation" referent="RBX38047DFBC18749C1A1EF4D274F778EDB">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=522638767</url></Content>
 								<string name="Name">ToolLungeAnim</string>
@@ -5336,13 +5372,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX312714442FE544A8974B833E68E34E5B">
+					<Item class="StringValue" referent="RBXE5932329AC944A04AA02AFD8DE6AA76B">
 						<Properties>
 							<string name="Name">toolnone</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX52FA822570474B029A4705B2A4656145">
+						<Item class="Animation" referent="RBX6BC5B957D9FB479A95D4AFC91C8F9457">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507768375</url></Content>
 								<string name="Name">ToolNoneAnim</string>
@@ -5350,13 +5386,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX1DCA3E025C73431EAA9CCE4E277ADFAC">
+					<Item class="StringValue" referent="RBX25CB5A8BD4AE4A4382DD76F805E9EDA3">
 						<Properties>
 							<string name="Name">toolslash</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX1B393A680CF7456FBB5A76597C0C9CA0">
+						<Item class="Animation" referent="RBX5BF728A094DA41B89338E6F9006911C1">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=522635514</url></Content>
 								<string name="Name">ToolSlashAnim</string>
@@ -5364,13 +5400,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXE5B1A1B025094893AA1AC22864E93ED4">
+					<Item class="StringValue" referent="RBX55233E373DA74F328C0E5DA93187C655">
 						<Properties>
 							<string name="Name">walk</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBXC950DB524E5445548923318FBB3D0301">
+						<Item class="Animation" referent="RBX7B6E2B3AF46D423FBB8EC299FC31D7D2">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=540798782</url></Content>
 								<string name="Name">WalkAnim</string>
@@ -5378,13 +5414,13 @@ end]]></ProtectedString>
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX5F45F916DE9C43ACAEB45F996FC20348">
+					<Item class="StringValue" referent="RBXBCBBD889730143FDB9EC26BC15853D98">
 						<Properties>
 							<string name="Name">wave</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBXB109E5267FA54D929F18025BBB29D9FE">
+						<Item class="Animation" referent="RBXDD5BF0E59D674409A199C867A884274C">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=507770239</url></Content>
 								<string name="Name">WaveAnim</string>
@@ -5394,7 +5430,7 @@ end]]></ProtectedString>
 					</Item>
 				</Item>
 			</Item>
-			<Item class="Model" referent="RBX430370A4EF5548A2A0F2C934F6994A1C">
+			<Item class="Model" referent="RBX5BF33085F4BD4B73A1D93D79B1F11454">
 				<Properties>
 					<CoordinateFrame name="ModelInPrimary">
 						<X>0</X>
@@ -5411,10 +5447,10 @@ end]]></ProtectedString>
 						<R22>1</R22>
 					</CoordinateFrame>
 					<string name="Name">R6</string>
-					<Ref name="PrimaryPart">RBX70660D50BCA446208196F5EC0CF1C561</Ref>
+					<Ref name="PrimaryPart">RBX1DA331443D094982A788600AEBE7EF17</Ref>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="Part" referent="RBX70660D50BCA446208196F5EC0CF1C561">
+				<Item class="Part" referent="RBX1DA331443D094982A788600AEBE7EF17">
 					<Properties>
 						<bool name="Anchored">true</bool>
 						<float name="BackParamA">-0.5</float>
@@ -5487,7 +5523,7 @@ end]]></ProtectedString>
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Motor6D" referent="RBXF0C93CA2C31A40FCBB38ED6856815039">
+					<Item class="Motor6D" referent="RBX9C06D647F46B4B02B167563D576AD75B">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>0</X>
@@ -5521,13 +5557,13 @@ end]]></ProtectedString>
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0.100000001</float>
 							<string name="Name">Root Hip</string>
-							<Ref name="Part0">RBX70660D50BCA446208196F5EC0CF1C561</Ref>
-							<Ref name="Part1">RBXF9BFBEFC3D5A4EBAB5999A832B455490</Ref>
+							<Ref name="Part0">RBX1DA331443D094982A788600AEBE7EF17</Ref>
+							<Ref name="Part1">RBXE753F155EE0E463C8C4D66233B18909A</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Part" referent="RBXF9BFBEFC3D5A4EBAB5999A832B455490">
+				<Item class="Part" referent="RBXE753F155EE0E463C8C4D66233B18909A">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -5600,7 +5636,7 @@ end]]></ProtectedString>
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Motor6D" referent="RBX4EE12920B947442F8B789A3365D8A7F0">
+					<Item class="Motor6D" referent="RBXE6EAC8D8F0E64518B3B79B47D751B6D8">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-1</X>
@@ -5634,12 +5670,12 @@ end]]></ProtectedString>
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0.100000001</float>
 							<string name="Name">Left Hip</string>
-							<Ref name="Part0">RBXF9BFBEFC3D5A4EBAB5999A832B455490</Ref>
-							<Ref name="Part1">RBXC4783F1519E5469BBFA50151AB905822</Ref>
+							<Ref name="Part0">RBXE753F155EE0E463C8C4D66233B18909A</Ref>
+							<Ref name="Part1">RBX71271FC366A14FA4BA8571D1B8785CB7</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBXC848B8BCD23E4A08942F43E46509B551">
+					<Item class="Motor6D" referent="RBX48D2424B579B421AB6CBAE0E6F13F5A7">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>1</X>
@@ -5673,12 +5709,12 @@ end]]></ProtectedString>
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0.100000001</float>
 							<string name="Name">Right Hip</string>
-							<Ref name="Part0">RBXF9BFBEFC3D5A4EBAB5999A832B455490</Ref>
-							<Ref name="Part1">RBXB67935818EEC499EB5F49112CF80326C</Ref>
+							<Ref name="Part0">RBXE753F155EE0E463C8C4D66233B18909A</Ref>
+							<Ref name="Part1">RBXA9074603A64E41C6967C2870948858CB</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBX203B38A17BF744B6B72D54D78CA55534">
+					<Item class="Motor6D" referent="RBX9E7C14D8F8054364A11F4050CC6D1FBF">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>-1</X>
@@ -5712,12 +5748,12 @@ end]]></ProtectedString>
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0.100000001</float>
 							<string name="Name">Left Shoulder</string>
-							<Ref name="Part0">RBXF9BFBEFC3D5A4EBAB5999A832B455490</Ref>
-							<Ref name="Part1">RBX558F3F2E26F8407EABD6DB64020D62EA</Ref>
+							<Ref name="Part0">RBXE753F155EE0E463C8C4D66233B18909A</Ref>
+							<Ref name="Part1">RBX63FDF220922F42E389FB570349D558DA</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBXC722218777F843B496E8F0A2B431370F">
+					<Item class="Motor6D" referent="RBX69628629B8B344FC93A8655ECE21A072">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>1</X>
@@ -5751,12 +5787,12 @@ end]]></ProtectedString>
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0.100000001</float>
 							<string name="Name">Right Shoulder</string>
-							<Ref name="Part0">RBXF9BFBEFC3D5A4EBAB5999A832B455490</Ref>
-							<Ref name="Part1">RBX640FE553D6AE4D5E808C7FCB36EA7A9E</Ref>
+							<Ref name="Part0">RBXE753F155EE0E463C8C4D66233B18909A</Ref>
+							<Ref name="Part1">RBX6FEE0CDF10A44A14B34A9DBC2B6A394E</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
-					<Item class="Motor6D" referent="RBXF773965544DC41648FF500D2B2ED457A">
+					<Item class="Motor6D" referent="RBX75E67457911041D7A902EEC50C5A8608">
 						<Properties>
 							<CoordinateFrame name="C0">
 								<X>0</X>
@@ -5790,13 +5826,13 @@ end]]></ProtectedString>
 							<bool name="IsAutoJoint">false</bool>
 							<float name="MaxVelocity">0.100000001</float>
 							<string name="Name">Neck</string>
-							<Ref name="Part0">RBXF9BFBEFC3D5A4EBAB5999A832B455490</Ref>
-							<Ref name="Part1">RBXCF1002B80F3D48CD9492C86E2B1354B4</Ref>
+							<Ref name="Part0">RBXE753F155EE0E463C8C4D66233B18909A</Ref>
+							<Ref name="Part1">RBX399AA4E1EBA84F5E82B101280563A3BD</Ref>
 							<BinaryString name="Tags"></BinaryString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Part" referent="RBXC4783F1519E5469BBFA50151AB905822">
+				<Item class="Part" referent="RBX71271FC366A14FA4BA8571D1B8785CB7">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -5870,7 +5906,7 @@ end]]></ProtectedString>
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBXB67935818EEC499EB5F49112CF80326C">
+				<Item class="Part" referent="RBXA9074603A64E41C6967C2870948858CB">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -5944,7 +5980,7 @@ end]]></ProtectedString>
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX558F3F2E26F8407EABD6DB64020D62EA">
+				<Item class="Part" referent="RBX63FDF220922F42E389FB570349D558DA">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -6018,7 +6054,7 @@ end]]></ProtectedString>
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBX640FE553D6AE4D5E808C7FCB36EA7A9E">
+				<Item class="Part" referent="RBX6FEE0CDF10A44A14B34A9DBC2B6A394E">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -6092,7 +6128,7 @@ end]]></ProtectedString>
 						</Vector3>
 					</Properties>
 				</Item>
-				<Item class="Part" referent="RBXCF1002B80F3D48CD9492C86E2B1354B4">
+				<Item class="Part" referent="RBX399AA4E1EBA84F5E82B101280563A3BD">
 					<Properties>
 						<bool name="Anchored">false</bool>
 						<float name="BackParamA">-0.5</float>
@@ -6165,7 +6201,7 @@ end]]></ProtectedString>
 							<Z>1</Z>
 						</Vector3>
 					</Properties>
-					<Item class="Decal" referent="RBXB88CA9BEDB6E4A00ADDCB5B9906FE2AA">
+					<Item class="Decal" referent="RBX60FBDB78DAB14163ACE92A0B29AB82FA">
 						<Properties>
 							<Color3 name="Color3">
 								<R>1</R>
@@ -6179,7 +6215,7 @@ end]]></ProtectedString>
 							<float name="Transparency">0</float>
 						</Properties>
 					</Item>
-					<Item class="SpecialMesh" referent="RBX8F988B3EBD1347BBA61EE9F0E6828812">
+					<Item class="SpecialMesh" referent="RBX43FFD88DDE6F45448747F1861AEEAA8E">
 						<Properties>
 							<token name="LODX">2</token>
 							<token name="LODY">2</token>
@@ -6206,7 +6242,7 @@ end]]></ProtectedString>
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="Humanoid" referent="RBX486D98BF91664EF2AF837DB03483851C">
+				<Item class="Humanoid" referent="RBX702CBDBC93C64AA8A06FBE3148D64976">
 					<Properties>
 						<bool name="AutoJumpEnabled">true</bool>
 						<bool name="AutoRotate">true</bool>
@@ -6234,7 +6270,7 @@ end]]></ProtectedString>
 						<float name="WalkSpeed">16</float>
 					</Properties>
 				</Item>
-				<Item class="Script" referent="RBX9B706FC8B34A4FEE9F9B27BB351047CB">
+				<Item class="Script" referent="RBX47AB68CF9CC14EB8B54C37D4ACB7F6D9">
 					<Properties>
 						<bool name="Disabled">true</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -6781,19 +6817,19 @@ end
 ]]></ProtectedString>
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
-					<Item class="StringValue" referent="RBX9214EEF6F1A846EF95DD025D43FF0492">
+					<Item class="StringValue" referent="RBX4C4F96F8E53746A199DE85D30BA5315C">
 						<Properties>
 							<string name="Name">idle</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX2E51C45EC25C4989B381BFFA314BCF9B">
+						<Item class="Animation" referent="RBX1120BD1687CA4BA89860C831B0684EED">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=180435571</url></Content>
 								<string name="Name">Animation1</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBX9B7302E6E586495E97E2D27B2E71DC99">
+							<Item class="NumberValue" referent="RBXF00C9D7240D44764A76E0110E6A81F16">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -6801,13 +6837,13 @@ end
 								</Properties>
 							</Item>
 						</Item>
-						<Item class="Animation" referent="RBX0342D137E6D043D1BF7D23C8A6580F5A">
+						<Item class="Animation" referent="RBXC10380A815784B13ABA383DA8DA2DE37">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=180435792</url></Content>
 								<string name="Name">Animation2</string>
 								<BinaryString name="Tags"></BinaryString>
 							</Properties>
-							<Item class="NumberValue" referent="RBXD4F7A6D1EA984D34AAE7A77D9574E868">
+							<Item class="NumberValue" referent="RBX83D69E3B1D904CE2B4F9224ECD32503F">
 								<Properties>
 									<string name="Name">Weight</string>
 									<BinaryString name="Tags"></BinaryString>
@@ -6816,13 +6852,13 @@ end
 							</Item>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXCFB76FC9E2914867BF32887EBB952A1F">
+					<Item class="StringValue" referent="RBXCD85AA5DB2C6481D9A1E9384EE5AD981">
 						<Properties>
 							<string name="Name">walk</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX2694F47F1EFE43FC84D9DF26A43F975A">
+						<Item class="Animation" referent="RBX38D8A9411C494851BE8DBA600D4D987C">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=180426354</url></Content>
 								<string name="Name">WalkAnim</string>
@@ -6830,13 +6866,13 @@ end
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX62821D138E064D879CED21BACCC46E20">
+					<Item class="StringValue" referent="RBXD002C142EA3C4954A4FC585B2B5D81F3">
 						<Properties>
 							<string name="Name">run</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBXD718981D56F74E5AAED1A17EEE28E278">
+						<Item class="Animation" referent="RBXE2996E1678E3494DA6872555BC888CF6">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=180426354</url></Content>
 								<string name="Name">RunAnim</string>
@@ -6844,13 +6880,13 @@ end
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX2F86BB13DD1C4DB7A2987B6AF8DA3A1B">
+					<Item class="StringValue" referent="RBX61E4C4AFA35C4B6FA892809FFFBD93B7">
 						<Properties>
 							<string name="Name">jump</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX9A318F58456A4AA095E572AF12AE1726">
+						<Item class="Animation" referent="RBXF27DEBB7B2C04C5FB1E6F1D719409FB0">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=125750702</url></Content>
 								<string name="Name">JumpAnim</string>
@@ -6858,13 +6894,13 @@ end
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX70D44B11CEC24762A3F6D73A58875CFB">
+					<Item class="StringValue" referent="RBX254956035087410F88E1966D298F0E4C">
 						<Properties>
 							<string name="Name">climb</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBXD695C783E22A416A89AD21C079EE0124">
+						<Item class="Animation" referent="RBX3482993D93594D55A73965215D46AD06">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=180436334</url></Content>
 								<string name="Name">ClimbAnim</string>
@@ -6872,13 +6908,13 @@ end
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX78B56102D87045BBA3735713D5E4CE43">
+					<Item class="StringValue" referent="RBX84195896F2C945A5A61C1E43892C20C6">
 						<Properties>
 							<string name="Name">toolnone</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX2917E8E54D1E4E518AFBE044C8BBBCDB">
+						<Item class="Animation" referent="RBX08D924AB74BD47D78B537EF5967FF461">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=182393478</url></Content>
 								<string name="Name">ToolNoneAnim</string>
@@ -6886,13 +6922,13 @@ end
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBX13BF2D26487044719F5F5F1D3B8F21A1">
+					<Item class="StringValue" referent="RBX8F96027E68494F339E7FE5B7A4333EE8">
 						<Properties>
 							<string name="Name">fall</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX6BF9CA98446A473FA847D6ACF1D1F80D">
+						<Item class="Animation" referent="RBX527E4B768F0042C592F8022BF39ABFA1">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=180436148</url></Content>
 								<string name="Name">FallAnim</string>
@@ -6900,13 +6936,13 @@ end
 							</Properties>
 						</Item>
 					</Item>
-					<Item class="StringValue" referent="RBXE8E22D24491C4CCFA791B94C39CAB710">
+					<Item class="StringValue" referent="RBXC7CBD3266C124B41A485C19796332C00">
 						<Properties>
 							<string name="Name">sit</string>
 							<BinaryString name="Tags"></BinaryString>
 							<string name="Value"></string>
 						</Properties>
-						<Item class="Animation" referent="RBX58EA4FB6B05E4C1A96F6C556562C2119">
+						<Item class="Animation" referent="RBXCCD108E888104A7DA6B8D805A7E484DB">
 							<Properties>
 								<Content name="AnimationId"><url>http://www.roblox.com/asset/?id=178130996</url></Content>
 								<string name="Name">SitAnim</string>
@@ -6916,12 +6952,12 @@ end
 					</Item>
 				</Item>
 			</Item>
-			<Item class="Folder" referent="RBXAA10B20D95704901AF694E6F38CDF1AC">
+			<Item class="Folder" referent="RBX4D9659D77839477782EB1E3A092E7B9D">
 				<Properties>
 					<string name="Name">Executers</string>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
-				<Item class="LocalScript" referent="RBXD2FBC0CE27A04FD698226DCC3AC25454">
+				<Item class="LocalScript" referent="RBX3E7ADB1CAFA8499F947870230897ADF7">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -6931,7 +6967,7 @@ end
 						<BinaryString name="Tags"></BinaryString>
 					</Properties>
 				</Item>
-				<Item class="Script" referent="RBXA37DD5336B6B4A5D92795306CE91E677">
+				<Item class="Script" referent="RBXEDC2C14847A34D949F91158B16FA6925">
 					<Properties>
 						<bool name="Disabled">false</bool>
 						<Content name="LinkedSource"><null></null></Content>
@@ -6942,7 +6978,7 @@ end
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="ModuleScript" referent="RBXBE290D2704BB4754B88A6F4E3200F19E">
+			<Item class="ModuleScript" referent="RBXED22D93D7DBA44CCA6BD8C5F464C6C8F">
 				<Properties>
 					<Content name="LinkedSource"><null></null></Content>
 					<string name="Name">ToggleGui</string>
@@ -7013,9 +7049,79 @@ end]]></ProtectedString>
 					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
+			<Item class="ModuleScript" referent="RBX19079A7B6E774CE9B2717989C2675F8B">
+				<Properties>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">ToggleChar</string>
+					<string name="ScriptGuid">{98353609-D766-4CBA-BE31-7B6FD2ED3E94}</string>
+					<ProtectedString name="Source"><![CDATA[--Table of hidden players.
+local hidden={}
+
+--Whether new players are hidden.
+local default=false
+
+local function showChar(ch)
+	for i,p in pairs(ch:GetDescendants()) do
+		if p:isA'BasePart' then
+			p.Transparency=p.Transparency-1
+		end
+	end
+end
+
+local function hideChar(ch)
+	for i,p in pairs(ch:GetDescendants()) do
+		if p:isA'BasePart' then
+			p.Transparency=p.Transparency+1
+		end
+	end
+end
+
+--Determines whether to hide or do nothing.
+local function iter8Ch(pl,ch)
+	local h=hidden[pl]
+	
+	--Only hides, since it's just got spawned.
+	if h then hideChar(ch)
+	
+	--First-time setup; the table value gets set.
+	elseif h==nil then hidden[pl]=default
+		if default then hideChar(ch)end
+	end
+end
+
+local function iter8Pl(pl)
+	--Connects the function to your characters.
+	if pl.Character then iter8Ch(pl,pl.Character)end
+	pl.CharacterAdded:Connect(function(ch)iter8Ch(pl,ch)end)
+end
+
+--Connects the function to your players.
+for i,pl in pairs(game.Players:children()) do iter8Pl(pl)end
+game.Players.PlayerAdded:Connect(iter8Pl)
+
+return{
+	setChar=function(pl,b)
+		
+		--Does nothing if there's nothing to change.
+		local h=hidden[pl]
+		if h==b then return end
+		
+		--Does the hiding process and all.
+		hidden[pl]=b
+		local ch=pl.Character
+		if b then hideChar(ch)
+		else showChar(ch)end
+	end,
+	setDef=function(b)
+		default=b
+	end,
+}]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
 		</Item>
 	</Item>
-	<Item class="SoundService" referent="RBX31BE0A63C35C44E292604C4D05AB9AB4">
+	<Item class="SoundService" referent="RBX0A04917841274EB79BF516FB1096B58B">
 		<Properties>
 			<token name="AmbientReverb">0</token>
 			<float name="DistanceFactor">3.32999992</float>
@@ -7026,19 +7132,19 @@ end]]></ProtectedString>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="NonReplicatedCSGDictionaryService" referent="RBX99B0844BFE9640DCA1A826419753FF21">
+	<Item class="NonReplicatedCSGDictionaryService" referent="RBX5473B274AE9F4265B5D3E0F865DB43D6">
 		<Properties>
 			<string name="Name">NonReplicatedCSGDictionaryService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="CSGDictionaryService" referent="RBX7D95FA54E6264C618C737F3DA6CB81D1">
+	<Item class="CSGDictionaryService" referent="RBXED8A9D9A77D24CCBAA4733C053426E03">
 		<Properties>
 			<string name="Name">CSGDictionaryService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="Chat" referent="RBX6758BF17DED046BFA63E6653A63E60D5">
+	<Item class="Chat" referent="RBX3770BE652157477EA1D4A7435416375F">
 		<Properties>
 			<bool name="BubbleChatEnabled">false</bool>
 			<bool name="LoadDefaultChat">true</bool>
@@ -7046,13 +7152,13 @@ end]]></ProtectedString>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="TimerService" referent="RBXC85D6AFB73744DC28AF57482D5C14E43">
+	<Item class="TimerService" referent="RBXFE04EF83A9884EB2A6014CFB540D98B7">
 		<Properties>
 			<string name="Name">Instance</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="Players" referent="RBXD20FCBC37FCD46359B161836B15FB42D">
+	<Item class="Players" referent="RBXA4B158B9A3E6408F923CD864E0E5F787">
 		<Properties>
 			<bool name="CharacterAutoLoads">true</bool>
 			<int name="MaxPlayersInternal">12</int>
@@ -7062,19 +7168,19 @@ end]]></ProtectedString>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="ReplicatedFirst" referent="RBX932A1B9A48924271A640CAE12129060C">
+	<Item class="ReplicatedFirst" referent="RBX8B9D5A1FAC6F4A439B19EEDCBF8FDDFA">
 		<Properties>
 			<string name="Name">ReplicatedFirst</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="TweenService" referent="RBX277F6DA65EE34125AFD59442F5F93DA6">
+	<Item class="TweenService" referent="RBX070507BE20494714BA5A9191D66423B6">
 		<Properties>
 			<string name="Name">TweenService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="StarterPlayer" referent="RBX7232003AE9E848CB92626141F8AD1B01">
+	<Item class="StarterPlayer" referent="RBXA294EA83F1E1438F83BE6525C39D92BC">
 		<Properties>
 			<bool name="AutoJumpEnabled">true</bool>
 			<float name="CameraMaxZoomDistance">400</float>
@@ -7092,26 +7198,26 @@ end]]></ProtectedString>
 			<float name="NameDisplayDistance">100</float>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
-		<Item class="StarterPlayerScripts" referent="RBXB8BB76A960EE459A927C8A103D3EF786">
+		<Item class="StarterPlayerScripts" referent="RBX385D7DA04C44467C9785A65B8FA9B152">
 			<Properties>
 				<string name="Name">StarterPlayerScripts</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
-		<Item class="StarterCharacterScripts" referent="RBX1343889A826F4D4488C5F7213424B536">
+		<Item class="StarterCharacterScripts" referent="RBX3369A5FFDCDA45B0B4B1538E68EACE5A">
 			<Properties>
 				<string name="Name">StarterCharacterScripts</string>
 				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
 	</Item>
-	<Item class="StarterPack" referent="RBX61ED4155BAB84EF6AFE60C97785A4307">
+	<Item class="StarterPack" referent="RBX383F4E761B29499C99D4924CA3391049">
 		<Properties>
 			<string name="Name">StarterPack</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="StarterGui" referent="RBXBAB1AFF6F50941BABB27F4B62E55D2DD">
+	<Item class="StarterGui" referent="RBXD0202DBC186C4DB49F2A11A8AC9D5FE2">
 		<Properties>
 			<string name="Name">StarterGui</string>
 			<bool name="ResetPlayerGuiOnSpawn">true</bool>
@@ -7120,37 +7226,37 @@ end]]></ProtectedString>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="LocalizationService" referent="RBX37EF46A80EAC4603BC9E625C106CAD42">
+	<Item class="LocalizationService" referent="RBXF398156503A84F438CF46CC3CFBA4139">
 		<Properties>
 			<string name="Name">LocalizationService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="TeleportService" referent="RBX444AB79682A945DE8B82BDEF0669D0AE">
+	<Item class="TeleportService" referent="RBX195514E86AF4404980E4DC2F3E5E5ACE">
 		<Properties>
 			<string name="Name">Teleport Service</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="CollectionService" referent="RBXEC876763EAD94702B9BB1A58037C09BE">
+	<Item class="CollectionService" referent="RBX6067694F41F0444BAEA562844A6627D5">
 		<Properties>
 			<string name="Name">CollectionService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="PhysicsService" referent="RBX24F5337D6FAB49AAA1DA1EA1C8377E92">
+	<Item class="PhysicsService" referent="RBXD94606491D6341CFA5E861CF37D53AB7">
 		<Properties>
 			<string name="Name">PhysicsService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="Geometry" referent="RBX64523EFF900548059FC1CEDCA82CD5CA">
+	<Item class="Geometry" referent="RBX17985135C72C446F88DDEA2703F8BEEA">
 		<Properties>
 			<string name="Name">Geometry</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="InsertService" referent="RBX01D81CB264124428A620E969A5FEE562">
+	<Item class="InsertService" referent="RBX69AB42B983B34E76AA4A31FBF8CCE520">
 		<Properties>
 			<bool name="AllowClientInsertModels">false</bool>
 			<bool name="AllowInsertFreeModels">false</bool>
@@ -7158,87 +7264,87 @@ end]]></ProtectedString>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="GamePassService" referent="RBX61AFF69160004C61A54F6C457ADCA4BE">
+	<Item class="GamePassService" referent="RBX9060F40F62274724A10D9F1F4B042059">
 		<Properties>
 			<string name="Name">GamePassService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="Debris" referent="RBX47854996F74F4905B4AA065125BD7A5C">
+	<Item class="Debris" referent="RBX078DB6D713C7427BB7CDF23DF4E714D3">
 		<Properties>
 			<int name="MaxItems">1000</int>
 			<string name="Name">Debris</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="CookiesService" referent="RBXD975A32C91674FAB8817078BA0B5878F">
+	<Item class="CookiesService" referent="RBXDFF1EDE4B5564DC3BEB146D269F34559">
 		<Properties>
 			<string name="Name">CookiesService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="VRService" referent="RBX90BA1C9AB359484EB2EAF9D821AD02C6">
+	<Item class="VRService" referent="RBX2E80598905304E098E028EAAD57EA2AA">
 		<Properties>
 			<string name="Name">VRService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="ContextActionService" referent="RBX8633077F9E5E4A87AA9B8DE7645425AE">
+	<Item class="ContextActionService" referent="RBX5D2BA0F0F4F24C0793AF25C338C60F27">
 		<Properties>
 			<string name="Name">ContextActionService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="ScriptService" referent="RBX37C40C214C08476582E15E6B8D2E40E3">
+	<Item class="ScriptService" referent="RBXAA5F8D10D3834C34B93A2A40D93ADE38">
 		<Properties>
 			<string name="Name">Instance</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="AssetService" referent="RBX6CCB7E28B95F4F69951D4586040E5EAE">
+	<Item class="AssetService" referent="RBX1F551ACA23DF4F62975DCC61E897A6D4">
 		<Properties>
 			<string name="Name">AssetService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="TouchInputService" referent="RBXE64D98C330744729AF0AB31930627B59">
+	<Item class="TouchInputService" referent="RBX832D2CC2ED724277A80E4186CB8275A8">
 		<Properties>
 			<string name="Name">TouchInputService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="Selection" referent="RBX483A3FF78A4940C0B42B2A3D08934AA6">
+	<Item class="Selection" referent="RBXFB65F324E02749D18F2FDAF7DB50BCE5">
 		<Properties>
 			<string name="Name">Selection</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="ServerScriptService" referent="RBXF6DB7A5ED9E24EF39D5BE3C30876F017">
+	<Item class="ServerScriptService" referent="RBXA87A3A66E70449C1851676BC7B386CDE">
 		<Properties>
 			<bool name="LoadStringEnabled">false</bool>
 			<string name="Name">ServerScriptService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="ServerStorage" referent="RBXB1F2911241634595B984738A3094CA56">
+	<Item class="ServerStorage" referent="RBX0E4C73EF7D44467AB03D61A18340A8C9">
 		<Properties>
 			<string name="Name">ServerStorage</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="ReplicatedStorage" referent="RBX26CBFD4F65FB4BDC8772DFB143927076">
+	<Item class="ReplicatedStorage" referent="RBX9322FADB4B034862A6CF52E4CCD934A3">
 		<Properties>
 			<string name="Name">ReplicatedStorage</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="LuaWebService" referent="RBX24D005EDD06A403D9DA6CFB984149AC1">
+	<Item class="LuaWebService" referent="RBX432DC958A48342238CC97B853102B620">
 		<Properties>
 			<string name="Name">Instance</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="Lighting" referent="RBX34DB6F7F4FA94C84A24EE90E194F3317">
+	<Item class="Lighting" referent="RBXE3CCFC9B65DA4701B8217B4F8F5FB88D">
 		<Properties>
 			<Color3 name="Ambient">
 				<R>0.498039246</R>
@@ -7277,7 +7383,7 @@ end]]></ProtectedString>
 			<token name="Technology">0</token>
 			<string name="TimeOfDay">14:00:00</string>
 		</Properties>
-		<Item class="Sky" referent="RBX584FA51D9B8540CDA78C64DA18121746">
+		<Item class="Sky" referent="RBX19ED7CBAE4C14CDAB8CB4B957291A60D">
 			<Properties>
 				<bool name="CelestialBodiesShown">true</bool>
 				<float name="MoonAngularSize">11</float>
@@ -7296,14 +7402,14 @@ end]]></ProtectedString>
 			</Properties>
 		</Item>
 	</Item>
-	<Item class="HttpService" referent="RBX3C15C7AF0AE642AC8534ED098698B76B">
+	<Item class="HttpService" referent="RBX0BCA2BE4D80D40D8B5CAFFF81F7DB555">
 		<Properties>
 			<bool name="HttpEnabled">true</bool>
 			<string name="Name">HttpService</string>
 			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
-	<Item class="VirtualInputManager" referent="RBX4570E33830EE4BE69157FD0EED859C26">
+	<Item class="VirtualInputManager" referent="RBX7281D90143414C8E8EECD3858B2BCF2E">
 		<Properties>
 			<string name="Name">VirtualInputManager</string>
 			<BinaryString name="Tags"></BinaryString>
