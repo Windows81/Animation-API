@@ -27,6 +27,7 @@ src=scr.Source:gsub('require%(','newReq('):gsub('script','scr')
 loadstring('f=function()\n'..src..'\nend')
 wait(1)
 f()
+print'AnimationAPI Loaded.'
 ```
 
 More documentation is provided in [this repository's wiki](https://github.com/Windows81/Animation-API/wiki)
