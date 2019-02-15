@@ -25,7 +25,7 @@ lclSrc=sc.AnimLocal.Source
 
 --Replaces the require function, yet avoids overriding the executor's environment.
 function newReq(o)local s='r=function()\n'..o.Source..'\nend'loadstring(s)local re=r()return re end
-src=scr.Source:gsub('require%(','newReq('):gsub('script','scr'):gsub('NestedLocalLoadstring',lclScr)
+src=scr.Source:gsub('require%(','newReq('):gsub('script','scr'):gsub('%-%-NestedLocalLoadstring',lclScr)
 
 --Encapsulates the main module into a function.
 delay(7,f)
