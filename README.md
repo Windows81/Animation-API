@@ -19,15 +19,17 @@ To run this module on a script executor *(i.e. JJSploit, Synapse, RC7)*, insert 
 --Loads the published plugin object.
 scr=game:GetObjects('rbxassetid://2723483316')[1]
 
+lclSrc=sc.AnimLocal.Source
+	:match'%-%-{B}%-%-(.+)%-%-{F}%-%-'
+	:gsub('r%equire','newReq')
+
 --Replaces the require function, yet avoids overriding the executor's environment.
 function newReq(o)local s='r=function()\n'..o.Source..'\nend'loadstring(s)local re=r()return re end
-src=scr.Source:gsub('require%(','newReq('):gsub('script','scr')
+src=scr.Source:gsub('require%(','newReq('):gsub('script','scr'):gsub('NestedLocalLoadstring',lclScr)
 
 --Encapsulates the main module into a function.
+delay(7,f)
 loadstring('f=function()\n'..src..'\nend')
-wait(1)
-f()
-print'AnimationAPI Loaded.'
 ```
 
 More documentation is provided in [this repository's wiki](https://github.com/Windows81/Animation-API/wiki)
