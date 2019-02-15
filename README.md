@@ -24,9 +24,13 @@ function newReq(o)local s='r=function()\n'..o.Source..'\nend'loadstring(s)local 
 src=scr.Source:gsub('require%(','newReq('):gsub('script','scr')
 
 --Encapsulates the main module into a function.
-loadstring('f=function()\n'..src..'\nend')
-wait(1)
-f()
+loadstring('f=function()\n'..src..'\nend f()')
+
+--COnnects the local aspects of the code.
+lclSrc=scr.AnimLocal.Source
+	:match'%-%-{B}%-%-(.+)%-%-{F}%-%-'
+	:gsub('r%equire','newReq')
+loadstring(lclSrc..'\nfireClients=connect')
 ```
 
 More documentation is provided in [this repository's wiki](https://github.com/Windows81/Animation-API/wiki)
