@@ -14,23 +14,4 @@ It is recommended that you assign a script-local variable to the library once it
 local AnimAPI = _G.AnimationAPI
 ```
 
-To run this module on a script executor *(i.e. JJSploit, Synapse, RC7)*, insert the following code into the Lua console:
-```lua
---Loads the published plugin object.
-scr=game:GetObjects('rbxassetid://2723483316')[1]
-
---Replaces the require function, yet avoids overriding the executor's environment.
-function newReq(o)local s='r=function()\n'..o.Source..'\nend'loadstring(s)local re=r()return re end
-src=scr.Source:gsub('require%(','newReq('):gsub('script','scr')
-
---Encapsulates the main module into a function.
-loadstring('f=function()\n'..src..'\nend f()')
-
---COnnects the local aspects of the code.
-lclSrc=scr.AnimLocal.Source
-	:match'%-%-{B}%-%-(.+)%-%-{F}%-%-'
-	:gsub('r%equire','newReq')
-loadstring(lclSrc..'\nfireClients=connect')
-```
-
 More documentation is provided in [this repository's wiki](https://github.com/Windows81/Animation-API/wiki)
